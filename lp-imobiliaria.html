@@ -1,0 +1,2792 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hubfi  A infraestrutura de crédito imobiliário do Brasil</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+  colors: {
+    ink: { 100:'#E8EAEF', 200:'#D1D5DD', 300:'#9CA3AF', 400:'#6B7280', 500:'#4B5563', 600:'#374151', 700:'#262B3B', 800:'#1A1F2E', 900:'#0F1219', 950:'#0B0E14' },
+    teal: { 50:'#EBF7F4', 100:'#D7EFE9', 200:'#AEDFD3', 300:'#7CCBB9', 400:'#3DB29C', 500:'#0E8B7A', 600:'#0A7165', 700:'#08574F', 800:'#053D38', 900:'#022B27', 950:'#0a796a' },
+    paper: { 50:'#FAFBFB', 100:'#F4F5F7', 200:'#E5E7EB' }
+  },
+  borderRadius: { 'sm':'4px', DEFAULT:'6px', 'md':'8px', 'lg':'10px' }
+}}};
+</script>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-white text-ink-900">
+<div class="bg-ink-950 text-white text-[13px]">
+<div class="max-w-[1280px] mx-auto px-6 h-10 flex items-center justify-center gap-3">
+<span class="inline-flex items-center gap-1.5 rounded-md bg-teal-500 text-white px-2 py-0.5 text-[11px] font-bold tracking-wider uppercase">Novo</span>
+<span class="text-white/85"><b class="text-white">Hubfi Copilot</b> chegou  sua IA pra crédito imobiliário</span>
+<a class="hidden sm:inline-flex items-center gap-1 text-teal-300 hover:text-teal-200 font-semibold" href="#copilot">Conheça
+      <svg fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="12"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+</a>
+</div>
+</div>
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-paper-200">
+<div class="max-w-[1280px] mx-auto px-6 h-[68px] flex items-center justify-between">
+<div class="flex items-center gap-10">
+<a class="flex items-center gap-2.5 shrink-0" href="#">
+
+<img src="images/hubfi.png" id="logo"></span>
+</a>
+<nav class="hidden lg:flex items-center gap-1">
+<div class="nav-dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="nav-dropdown__trigger" type="button">
+            Soluções
+            <svg class="chev" fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="12"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</button>
+<div class="nav-dropdown__panel" role="menu">
+<div class="nav-dropdown__grid">
+<div class="nav-dropdown__col-products">
+<a class="dropdown-card" href="#produtos" role="menuitem">
+<span class="dropdown-card__icon">
+<svg fill="none" height="18" stroke="#0A7165" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="18"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><path d="M9 22V14h6v8" stroke="#3DB29C" stroke-width="1.7"></path></svg>
+</span>
+<span class="dropdown-card__body">
+<span class="dropdown-card__title">
+                      Financiamento
+                      <svg class="arr-tiny" fill="none" height="10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" viewbox="0 0 24 24" width="10"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+</span>
+<span class="dropdown-card__desc">Multi-banco · Itaú nativo · Comparador IA</span>
+</span>
+</a>
+<a class="dropdown-card" href="#produtos" role="menuitem">
+<span class="dropdown-card__icon">
+<svg fill="none" height="18" stroke="#0A7165" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="18"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2" stroke="#3DB29C" stroke-width="1.7"></path></svg>
+</span>
+<span class="dropdown-card__body">
+<span class="dropdown-card__title">
+                      Consórcio
+                      <svg class="arr-tiny" fill="none" height="10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" viewbox="0 0 24 24" width="10"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+</span>
+<span class="dropdown-card__desc">Marketplace conectado a 4 administradoras</span>
+</span>
+</a>
+<a class="dropdown-card" href="#produtos" role="menuitem">
+<span class="dropdown-card__icon">
+<svg fill="none" height="18" stroke="#0A7165" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="18"><path d="M3 12h13"></path><path d="M16 6l6 6-6 6" stroke="#3DB29C" stroke-width="1.7"></path></svg>
+</span>
+<span class="dropdown-card__body">
+<span class="dropdown-card__title">
+                      Portabilidade
+                      <svg class="arr-tiny" fill="none" height="10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" viewbox="0 0 24 24" width="10"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+</span>
+<span class="dropdown-card__desc">Economia média de R$ 142k por contrato</span>
+</span>
+</a>
+</div>
+<a class="dropdown-promo" href="#copilot" role="menuitem">
+<div class="dropdown-promo__top">
+<div class="dropdown-promo__badge">
+<svg fill="#7CCBB9" height="8" viewbox="0 0 24 24" width="8"><circle cx="12" cy="12" r="6"></circle></svg>
+                    Novo · IA
+                  </div>
+<div class="dropdown-promo__title">Hubfi Copilot</div>
+<div class="dropdown-promo__desc">Recomenda banco, prevê aprovação e atende clientes via WhatsApp.</div>
+</div>
+<span class="dropdown-promo__cta">
+                  Conhecer
+                  <svg fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="12"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+</span>
+</a>
+</div>
+<div class="nav-dropdown__foot">
+<a class="nav-dropdown__foot-link" href="#produtos">
+<svg fill="none" height="11" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24" width="11"><rect height="7" width="7" x="3" y="3"></rect><rect height="7" width="7" x="14" y="3"></rect><rect height="7" width="7" x="3" y="14"></rect><rect height="7" width="7" x="14" y="14"></rect></svg>
+                Ver todos os produtos
+              </a>
+<a class="nav-dropdown__foot-link" href="#cta">
+                Falar com vendas
+                <svg fill="none" height="11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="11"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<a class="flex items-center gap-1.5 h-10 px-3 rounded-md text-[14.5px] font-medium text-ink-700 hover:text-ink-950 hover:bg-paper-100" href="#copilot">Copilot<span class="text-[9px] font-bold uppercase tracking-wider text-white bg-teal-500 px-1.5 py-0.5 rounded">Novo</span></a>
+<a class="flex items-center h-10 px-3 rounded-md text-[14.5px] font-medium text-ink-700 hover:text-ink-950 hover:bg-paper-100" href="#">Plataforma</a>
+<a class="flex items-center h-10 px-3 rounded-md text-[14.5px] font-medium text-ink-700 hover:text-ink-950 hover:bg-paper-100" href="#">Empresa</a>
+
+</nav>
+</div>
+<div class="flex items-center gap-2">
+<a class="hidden sm:inline-flex items-center h-10 px-3 rounded-md text-[14.5px] font-medium btn-ghost" href="#">Entrar</a>
+<a class="btn-cta-primary btn-cta-primary--sm" href="#cta">
+<span class="icn-wrap"><svg class="arr" fill="none" height="13" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="13"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></span>
+        Agendar demo
+      </a>
+</div>
+</div>
+</header>
+<!-- HERO -->
+<section class="relative overflow-hidden mesh-hero">
+<div class="absolute inset-0 gridlines opacity-50 pointer-events-none"></div>
+<div class="relative max-w-[1280px] mx-auto px-6 pt-16 pb-16 lg:pt-20 lg:pb-24">
+<div class="reveal max-w-[900px] mx-auto text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-white ring-1 ring-teal-100 shadow-soft text-[12.5px] font-medium text-teal-700 mb-7">
+<div class="copilot-logo" style="width:20px;height:20px;border-radius:6px;font-size:11px">C</div>
+<span>Hubfi Copilot</span><span class="w-px h-3.5 bg-teal-200"></span><span class="text-ink-500">Sua imobiliária lucrando como um banco</span>
+</div>
+<!-- HEADLINE em 2 linhas garantidas: tamanho menor + <br> manual -->
+<h1 class="text-[38px] md:text-[48px] lg:text-[56px] leading-[1.06] font-bold text-ink-950">Sua imobiliária além da comissão <br/> <span class="text-teal-500">Você está deixando pelo menos 10mil na mesa por mês</span></h1>
+<p class="mt-6 text-[18px] text-ink-500 leading-relaxed max-w-[800px] mx-auto text-pretty">
+Plataforma inteligente para imobiliárias, corretores e construtoras<br> um Hub financeiro completo para escalar a sua rentabilidade. 
+</p>
+<div class="mt-9 flex flex-wrap items-center justify-center gap-3">
+<a class="btn-cta-primary group" href="#cta">
+<span class="icn-wrap"><svg class="arr" fill="none" height="16" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="16"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></span>
+          Agendar demonstração
+        </a>
+<a class="btn-cta-ghost group" href="#produtos">
+<span class="icn-wrap"><svg class="play-icn" fill="currentColor" height="14" viewbox="0 0 24 24" width="14"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></span>
+          Ver na prática
+        </a>
+</div>
+</div>
+<div class="reveal mt-14 lg:mt-16 relative" id="heroMockup">
+<div class="absolute -inset-6 -z-10 rounded-[20px] bg-gradient-to-tr from-teal-200/40 via-teal-100/30 to-transparent blur-3xl"></div>
+<div class="rounded-lg bg-white ring-1 ring-paper-200 shadow-3d overflow-hidden">
+<div class="h-10 px-4 flex items-center gap-2 border-b border-paper-200 bg-paper-50">
+<div class="flex gap-1.5">
+  <div class="w-3 h-3 rounded-full bg-[#FF5F57]"></div>
+  <div class="w-3 h-3 rounded-full bg-[#FEBC2E]"></div>
+  <div class="w-3 h-3 rounded-full bg-[#28C840]"></div>
+</div>
+<div class="flex-1 flex justify-center"><div class="h-6 px-3 rounded-md bg-white ring-1 ring-paper-200 flex items-center gap-1.5 text-[11.5px] text-ink-400 font-medium"><svg fill="none" height="11" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24" width="11"><rect height="11" rx="2" width="18" x="3" y="11"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>app.hubfi.com.br/backoffice</div></div>
+<div class="w-12"></div>
+</div>
+<div class="grid grid-cols-[60px_1fr]">
+<aside class="border-r border-paper-200 bg-paper-50/40 flex flex-col items-center h-[640px] py-3 gap-1.5 overflow-hidden">
+<!-- Workspace logo -->
+<button class="w-9 h-9 rounded-md bg-ink-950 flex items-center justify-center text-white font-bold text-[13px] shrink-0" title="Bossa Nova Imóveis">h<span class="text-teal-400">.</span></button>
+<div class="side-rail-divider"></div>
+<!-- Nova operação (FAB) -->
+<button class="w-9 h-9 rounded-md bg-gradient-to-br from-teal-500 to-teal-700 text-white flex items-center justify-center shadow-teal shrink-0 hover:from-teal-600 hover:to-teal-800 transition" title="Nova operação (⌘N)">
+<svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-width="2.8" viewbox="0 0 24 24" width="14"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg>
+</button>
+<!-- Search -->
+<button class="side-rail-item" title="Buscar (⌘K)">
+<svg class="icn" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line></svg>
+</button>
+<div class="side-rail-divider"></div>
+<!-- Principal -->
+<button class="side-rail-item active" title="Backoffice">
+<svg class="icn" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><rect height="7" width="7" x="3" y="3"></rect><rect height="7" width="7" x="14" y="3"></rect><rect height="7" width="7" x="3" y="14"></rect><rect height="7" width="7" x="14" y="14"></rect></svg>
+</button>
+<button class="side-rail-item" title="Operações">
+<svg class="icn" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><rect height="14" rx="1" width="6" x="2" y="6"></rect><rect height="17" rx="1" width="6" x="9" y="3"></rect><rect height="11" rx="1" width="6" x="16" y="9"></rect></svg>
+<span class="side-rail-badge side-rail-badge--num">47</span>
+</button>
+<button class="side-rail-item" title="Clientes">
+<svg class="icn" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4-6 8-6s7 2 8 6"></path></svg>
+</button>
+<button class="side-rail-item" title="Produtos">
+<svg class="icn" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+</button>
+<button class="side-rail-item" title="Mensagens">
+<svg class="icn" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<span class="side-rail-badge">3</span>
+</button>
+<div class="side-rail-divider"></div>
+<!-- Inteligência -->
+<button class="side-rail-item" title="Hubfi Copilot">
+<div class="copilot-logo" style="width:16px;height:16px;border-radius:5px;font-size:9px">C</div>
+<span class="side-rail-badge side-rail-badge--ai">AI</span>
+</button>
+<button class="side-rail-item" title="Insights">
+<svg class="icn" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><line x1="18" x2="18" y1="20" y2="10"></line><line x1="12" x2="12" y1="20" y2="4"></line><line x1="6" x2="6" y1="20" y2="14"></line></svg>
+</button>
+<button class="side-rail-item" title="Risco">
+<svg class="icn" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M12 9v4M12 17h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path></svg>
+</button>
+<!-- Spacer -->
+<div class="flex-1"></div>
+<!-- Footer -->
+<button class="side-rail-item" title="Ajuda">
+<svg class="icn" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"></path></svg>
+</button>
+<button class="side-rail-item" title="Configurações">
+<svg class="icn" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+</button>
+<div class="side-rail-divider"></div>
+<!-- Avatar -->
+<button class="w-9 h-9 rounded-full bg-teal-500 flex items-center justify-center text-white text-[10.5px] font-bold shrink-0 ring-2 ring-white" title="Lucas Carvalho · Gerente comercial">LC</button>
+</aside>
+<div class="bg-white flex flex-col h-[640px]">
+<div class="border-b border-paper-200 bg-white px-7 py-4">
+<div class="mb-4 flex items-center justify-between">
+<div><h3 class="text-[15px] font-semibold text-ink-950">Backoffice</h3><p class="text-[11.5px] text-ink-500 mt-0.5">Hubfi AI · 29 abr · 09:14 · 47 operações ativas</p></div>
+<div class="flex items-center gap-1.5"><button class="text-[11px] px-2.5 py-1.5 rounded-md text-ink-600 hover:bg-paper-100 flex items-center gap-1.5"><svg fill="none" height="11" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="11"><line x1="21" x2="14" y1="4" y2="4"></line><line x1="10" x2="3" y1="4" y2="4"></line><line x1="21" x2="12" y1="12" y2="12"></line><line x1="8" x2="3" y1="12" y2="12"></line></svg>Filtros</button></div>
+</div>
+<div class="grid grid-cols-5 gap-2.5">
+  <div class="bg-white border border-paper-200 rounded-md p-3">
+    <div class="w-5 h-5 rounded-full bg-paper-100 text-ink-600 flex items-center justify-center mb-1.5">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="11" x2="8.01" y2="11"/><line x1="12" y1="11" x2="12.01" y2="11"/><line x1="16" y1="11" x2="16.01" y2="11"/><line x1="8" y1="15" x2="8.01" y2="15"/><line x1="12" y1="15" x2="12.01" y2="15"/><line x1="16" y1="15" x2="16.01" y2="15"/><line x1="8" y1="19" x2="8.01" y2="19"/><line x1="12" y1="19" x2="12.01" y2="19"/></svg>
+    </div>
+    <div class="text-[24px] font-semibold text-ink-950 leading-none kpi-num-anim" style="animation-delay:.3s">12</div>
+    <div class="text-[9.5px] uppercase tracking-wider text-ink-500 mt-1.5 font-medium">Simulação</div>
+  </div>
+  <div class="bg-white border border-paper-200 rounded-md p-3">
+    <div class="w-5 h-5 rounded-full bg-teal-50 text-teal-700 flex items-center justify-center mb-1.5">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+    </div>
+    <div class="text-[24px] font-semibold text-ink-950 leading-none kpi-num-anim" style="animation-delay:.4s">8</div>
+    <div class="text-[9.5px] uppercase tracking-wider text-ink-500 mt-1.5 font-medium">Análise</div>
+  </div>
+  <div class="bg-white border border-paper-200 rounded-md p-3">
+    <div class="w-5 h-5 rounded-full bg-teal-50 text-teal-700 flex items-center justify-center mb-1.5">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+    </div>
+    <div class="text-[24px] font-semibold text-ink-950 leading-none kpi-num-anim" style="animation-delay:.5s">6</div>
+    <div class="text-[9.5px] uppercase tracking-wider text-ink-500 mt-1.5 font-medium">Proposta</div>
+  </div>
+  <div class="bg-white border border-paper-200 rounded-md p-3">
+    <div class="w-5 h-5 rounded-full bg-teal-50 text-teal-700 flex items-center justify-center mb-1.5">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+    </div>
+    <div class="text-[24px] font-semibold text-ink-950 leading-none kpi-num-anim" style="animation-delay:.6s">5</div>
+    <div class="text-[9.5px] uppercase tracking-wider text-ink-500 mt-1.5 font-medium">Documentação</div>
+  </div>
+  <div class="bg-white border border-paper-200 rounded-md p-3">
+    <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mb-1.5">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <div class="text-[24px] font-semibold text-ink-950 leading-none kpi-num-anim" style="animation-delay:.7s">7</div>
+    <div class="text-[9.5px] uppercase tracking-wider text-ink-500 mt-1.5 font-medium">Liberação</div>
+  </div>
+</div>
+</div>
+<div class="flex-1 overflow-hidden p-5">
+<div class="max-w-[600px] mx-auto space-y-4" id="heroChat">
+<div class="hero-msg flex gap-2.5" data-step="1"><div class="w-7 h-7 rounded-full bg-gradient-to-br from-teal-500 to-teal-700 flex items-center justify-center shrink-0 mt-0.5"><svg fill="none" height="13" stroke="white" stroke-width="2" viewbox="0 0 24 24" width="13"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"></path></svg></div><div class="flex-1 pt-0.5"><div class="text-[12.5px] leading-relaxed text-ink-800">Bom dia, <b>Lucas</b>! 👋 São <b>09:14 de segunda</b>. Preparei seu briefing.</div></div></div>
+<div class="hero-msg flex gap-2.5" data-step="2"><div class="w-7 h-7 shrink-0"></div><div class="flex-1 border border-paper-200 rounded-md overflow-hidden"><div class="px-3.5 py-2.5 border-b border-paper-100 flex items-center gap-2 bg-paper-50/50"><svg fill="none" height="14" stroke="#0E8B7A" stroke-width="2" viewbox="0 0 24 24" width="14"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg><div class="text-[12px] font-semibold text-ink-800">Desde sua última visita · sex. 18:42</div></div><ul class="divide-y divide-paper-100 text-[12.5px]"><li class="px-3.5 py-2 flex items-center gap-2.5"><div class="w-6 h-6 rounded-md bg-emerald-50 flex items-center justify-center shrink-0"><svg fill="none" height="13" stroke="#10b981" stroke-width="2.5" viewbox="0 0 24 24" width="13"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="flex-1"><span class="text-ink-800">1 operação foi <b>liberada</b></span><span class="text-ink-400"> · R$ 480k</span></div></li><li class="px-3.5 py-2 flex items-center gap-2.5"><div class="w-6 h-6 rounded-md bg-teal-50 flex items-center justify-center shrink-0"><svg fill="none" height="13" stroke="#0E8B7A" stroke-width="2.5" viewbox="0 0 24 24" width="13"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></div><div class="flex-1"><span class="text-ink-800"><b>5 operações</b> avançaram de etapa</span></div></li><li class="px-3.5 py-2 flex items-center gap-2.5"><div class="w-6 h-6 rounded-md bg-teal-50 flex items-center justify-center shrink-0"><svg fill="none" height="13" stroke="#0A7165" stroke-width="2.5" viewbox="0 0 24 24" width="13"><path d="M12 9v4M12 17h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path></svg></div><div class="flex-1"><span class="text-ink-800"><b>3 pendências</b> precisam de você</span></div></li></ul></div></div>
+<div class="hero-msg flex gap-2.5" data-step="3"><div class="w-7 h-7 rounded-full bg-gradient-to-br from-teal-500 to-teal-700 flex items-center justify-center shrink-0 mt-0.5"><svg fill="none" height="13" stroke="white" stroke-width="2" viewbox="0 0 24 24" width="13"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"></path></svg></div><div class="flex-1 pt-0.5 space-y-2"><div class="text-[12.5px] leading-relaxed text-ink-800"><b>Pra fazer agora</b>:</div><div class="hero-todo-item border border-paper-200 rounded-md p-3 bg-paper-50/40 transition-colors" data-hero-resend=""><div class="flex items-start gap-2.5"><div class="hero-todo-num w-6 h-6 rounded-md bg-teal-500/10 text-teal-700 flex items-center justify-center shrink-0 text-[10.5px] font-bold transition-colors">1</div><div class="flex-1 min-w-0"><div class="flex items-center gap-2 flex-wrap"><span class="text-[12px] font-semibold text-ink-950">Reenviar formulário · Pedro Leal</span><span class="text-[9px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-teal-500/10 text-teal-700 font-bold">87% risco</span></div><div class="text-[11px] text-ink-500 mt-0.5">Cliente parou de responder · R$ 480k em risco.</div></div><button class="hero-todo-btn shrink-0 self-center inline-flex items-center gap-1 text-[10.5px] font-semibold text-white bg-gradient-to-br from-teal-500 to-teal-700 hover:from-teal-600 hover:to-teal-800 px-2.5 py-1.5 rounded-md shadow-teal transition" data-hero-notify-btn type="button"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Notificar</button></div></div><div class="border border-red-200 rounded-md p-3 bg-red-50/30"><div class="flex items-start gap-2.5"><div class="w-6 h-6 rounded-md bg-red-500/10 text-red-600 flex items-center justify-center shrink-0 text-[10.5px] font-bold">2</div><div class="flex-1"><div class="flex items-center gap-2 flex-wrap"><span class="text-[12px] font-semibold text-ink-950">Aprovar contraproposta · Beatriz Ramos</span><span class="text-[9px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-red-500/10 text-red-600 font-bold">Urgente</span></div><div class="text-[11px] text-ink-500 mt-0.5">Itaú enviou taxa 10,75% (vs 10,49% original).</div></div></div></div></div></div>
+</div>
+</div>
+<div class="border-t border-paper-100 px-5 py-3"><div class="max-w-[600px] mx-auto"><div class="border border-paper-200 rounded-md bg-white px-3 py-2 flex items-center gap-2"><span class="text-[12.5px] text-ink-400 flex-1">Pergunte ou peça uma ação à IA<span class="ml-0.5 inline-block w-0.5 h-3.5 bg-teal-500 cursor-blink align-middle"></span></span><button class="bg-gradient-to-br from-teal-500 to-teal-700 text-white p-1.5 rounded-md"><svg fill="none" height="13" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="13"><line x1="12" x2="12" y1="19" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg></button></div></div></div>
+</div>
+</div>
+</div>
+<div class="hidden lg:block absolute -left-4 top-32 z-10 bg-white rounded-md shadow-card p-3 w-[200px] float"><div class="flex items-center gap-2"><div class="shrink-0 w-8 h-8 rounded-full bg-teal-500 flex items-center justify-center"><svg fill="none" height="14" stroke="white" stroke-width="3" viewbox="0 0 24 24" width="14"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="min-w-0"><div class="text-[11.5px] font-bold text-ink-950">Aprovação Itaú</div><div class="text-[10px] text-ink-400">R$ 90.000 · há 4 min</div></div></div></div>
+<div class="hidden lg:block absolute -right-4 bottom-32 z-10 bg-white rounded-md shadow-card p-3 w-[230px] float float-delay"><div class="flex items-start gap-2"><div class="copilot-logo copilot-logo-sm shrink-0">C</div><div class="min-w-0 flex-1"><div class="text-[10.5px] font-bold text-teal-700">Hubfi Copilot</div><div class="text-[11px] text-ink-700 mt-0.5 leading-snug">Sugiro o Itaú  92% de chance.</div></div></div></div>
+<!-- Cena 6: cursor ghost (overlay do mockup hero) -->
+<div aria-hidden="true" class="hero-cursor" data-hero-cursor="">
+<svg fill="#1A1F2E" height="20" stroke="white" stroke-linejoin="round" stroke-width="1.4" viewbox="0 0 24 24" width="20">
+<path d="M5 3l6 16 2.5-6.5L20 10z"></path>
+</svg>
+<span class="hero-cursor-ripple"></span>
+</div>
+<!-- Cena 6: WhatsApp PiP -->
+<aside aria-hidden="true" class="hero-wa-pip" data-hero-wapip="">
+<header class="hero-wa-header">
+<div class="hero-wa-avatar">P</div>
+<div class="hero-wa-info">
+<div class="hero-wa-name">Pedro Leal</div>
+<div class="hero-wa-status">online</div>
+</div>
+<svg class="hero-wa-icn" fill="none" height="11" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="11"><path d="M23 7l-7 5 7 5zM2 5h13a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2z"></path></svg>
+</header>
+<div class="hero-wa-chat">
+<div class="hero-wa-day">hoje</div>
+<div class="hero-wa-bubble" data-hero-wabubble="">
+<div class="hero-wa-bubble-text"><b>Olá Pedro!</b> Pra dar continuidade no seu financiamento, é só preencher este formulário 👇</div>
+<div class="hero-wa-bubble-link">hubfi.app/f/183722</div>
+<div class="hero-wa-bubble-meta">
+<span class="hero-wa-time">09:14</span>
+<svg class="hero-wa-checks" data-hero-wachecks="" fill="none" height="9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 11" width="14"><path d="M1 6.2 4 9l6.5-7"></path><path d="M5.5 6.2 8.5 9 15 2"></path></svg>
+</div>
+</div>
+</div>
+</aside>
+<!-- Cena 6: Modal de sucesso centralizado -->
+<div aria-hidden="true" class="hero-toast" data-hero-toast="" role="status">
+<div class="hero-toast-card">
+<div class="hero-toast-icon">
+<svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24" width="22"><path d="M5 12l5 5L20 7"></path></svg>
+</div>
+<div class="hero-toast-text">
+<div class="hero-toast-title">Mensagem enviada com sucesso</div>
+<div class="hero-toast-desc">Pedro recebeu o link do formulário no WhatsApp</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- LOGOS -->
+<section class="py-14 border-y border-paper-200 bg-paper-50/60">
+  <div class="max-w-[1280px] mx-auto px-6">
+    <p class="text-center text-[12px] font-semibold tracking-[0.16em] uppercase text-ink-400 mb-9">+ de 70 instituições financeiras integradas</p>
+  
+    <div class="marquee-mask overflow-hidden"><div class="flex marquee-track gap-3 items-center">
+ 
+      <div class="bank-logo"><img src="images/logos/itau.svg" alt="Itaú" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/bradesco.svg" alt="Bradesco" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/santander.svg" alt="Santander" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/caixa.svg" alt="Caixa" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/bancodobrasil.svg" alt="Banco do Brasil" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/inter.svg" alt="Inter" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/btg.svg" alt="BTG Pactual" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/safra.svg" alt="Safra" loading="lazy"><span></span></div>
+   <div class="bank-logo"><img src="images/logos/sicoob.svg" alt="Sicoob" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/pan.svg" alt="Banco Pan" loading="lazy"><span> </span></div>
+      <div class="bank-logo"><img src="images/logos/c6.svg" alt="C6 Bank" loading="lazy"><span> </span></div>
+ <div class="bank-logo"><img src="images/logos/neon.svg" alt="Neon" loading="lazy"><span></span></div>
+
+  <div class="bank-logo"><img src="images/logos/itau.svg" alt="Itaú" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/bradesco.svg" alt="Bradesco" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/santander.svg" alt="Santander" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/caixa.svg" alt="Caixa" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/bancodobrasil.svg" alt="Banco do Brasil" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/inter.svg" alt="Inter" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/btg.svg" alt="BTG Pactual" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/safra.svg" alt="Safra" loading="lazy"><span></span></div>
+   <div class="bank-logo"><img src="images/logos/sicoob.svg" alt="Sicoob" loading="lazy"><span></span></div>
+      <div class="bank-logo"><img src="images/logos/pan.svg" alt="Banco Pan" loading="lazy"><span> </span></div>
+      <div class="bank-logo"><img src="images/logos/c6.svg" alt="C6 Bank" loading="lazy"><span> </span></div>
+ <div class="bank-logo"><img src="images/logos/neon.svg" alt="Neon" loading="lazy"><span></span></div>
+
+
+ 
+    </div></div>
+  </div>
+</section>
+
+
+<!-------- simulador dinheiro na mesa ----------------------------------->
+
+
+
+    <!-- COMPARE CARDS -->
+  <!-- ═══════════════════════════════════════════════════════════════
+     SUBSTITUI A <section class="dinheiro-mesa"> INTEIRA NO seu index.html
+     (header + cards v5 + simulador completo)
+     ═══════════════════════════════════════════════════════════════ -->
+
+<section class="dinheiro-mesa" id="dinheiro-mesa">
+  <div class="dinheiro-mesa-inner">
+
+    <!-- HEADER -->
+    <header class="dm-head">
+      <h2 class="dm-headline">
+        Você está deixando<br>
+        <span class="dm-headline-mark">dinheiro na mesa.</span>
+      </h2>
+      <p class="dm-desc">
+        A maioria das imobiliárias só ganha na comissão da venda.<br>
+        Com a Hubfi, cada cliente vira <b>nova fonte de receita</b> sem aumentar equipe.
+      </p>
+    </header>
+
+    <!-- ═══ COMPARE CARDS v5 ═══ -->
+    <div class="dm-compare">
+
+      <!-- LOSS -->
+      <article class="dm-compare-card dm-compare-card--loss">
+        <header class="dm-compare-head">
+          <span class="dm-compare-tag">
+            <span class="dm-compare-tag-dot"></span>
+            Sem Hubfi
+          </span>
+          <span class="dm-compare-icon">
+            <svg width="28" height="28" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path opacity=".28" d="M14 14H4.66667C3.19391 14 2 12.8061 2 11.3333V2" stroke="#FF047D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.66699 6.40271L5.07383 7.62324C5.57052 9.11329 7.68669 9.08869 8.1486 7.58749C8.57695 6.19536 10.4844 6.03749 11.1358 7.34026L12.7777 10.6241M12.7777 10.6241C12.8579 10.5838 12.9246 10.5168 12.9639 10.43C13.2541 9.78843 13.4643 9.11313 13.5895 8.41934M12.7777 10.6241C12.6975 10.6643 12.6038 10.6778 12.5108 10.6574C11.823 10.5064 11.156 10.2713 10.525 9.95683" stroke="#FF047D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </header>
+
+        <div class="dm-compare-body">
+          <span class="dm-compare-label">Hoje sua imobiliária deixa de ganhar</span>
+          <span class="dm-compare-value">R$&nbsp;8,4<small>mil</small></span>
+          <span class="dm-compare-per">em comissão CORBAN por cliente atendido</span>
+        </div>
+
+        <footer class="dm-compare-foot">
+          <span class="dm-compare-foot-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </span>
+          <span class="dm-compare-foot-text">
+            Comissão fica com o <b>banco</b> que financia — você opera o cliente, mas não captura nada.
+          </span>
+        </footer>
+      </article>
+
+      <!-- GAIN -->
+      <article class="dm-compare-card dm-compare-card--gain">
+        <header class="dm-compare-head">
+          <span class="dm-compare-tag">
+            <span class="dm-compare-tag-dot"></span>
+            Com Hubfi
+          </span>
+          <span class="dm-compare-icon">
+            <svg width="28" height="28" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path opacity=".28" d="M14 14H4.66667C3.19391 14 2 12.8061 2 11.3333V2" stroke="#06D7B1" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.66699 9.33341L5.07383 8.11289C5.57052 6.62283 7.68669 6.64744 8.1486 8.14864C8.57695 9.54077 10.4844 9.69863 11.1358 8.39586L12.7777 5.11204M12.7777 5.11204C12.8579 5.15228 12.9246 5.21932 12.9639 5.3061C13.2541 5.94769 13.4643 6.62299 13.5895 7.31679M12.7777 5.11204C12.6975 5.0718 12.6038 5.05836 12.5108 5.07877C11.823 5.22968 11.156 5.46487 10.525 5.77929" stroke="#06D7B1" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </header>
+
+        <div class="dm-compare-body">
+          <span class="dm-compare-label">Sua imobiliária passa a ganhar</span>
+          <span class="dm-compare-value">R$&nbsp;7,2<small>mil</small></span>
+          <span class="dm-compare-per">de receita extra, na mesma venda que você já fecharia</span>
+        </div>
+
+        <footer class="dm-compare-foot">
+          <span class="dm-compare-foot-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <span class="dm-compare-foot-text">
+            Comissão paga <b>direto na sua conta</b> — soma à venda, sem dividir, sem cliente extra.
+          </span>
+        </footer>
+      </article>
+
+    </div>
+
+    <!-- ═══ SIMULADOR ═══ -->
+    <div class="dm-simulator">
+
+      <header class="dm-sim-head">
+        <div class="dm-sim-head-left">
+          <span class="dm-sim-pill">Simulador rápido</span>
+          <h3 class="dm-sim-title">Quanto sua imobiliária está deixando na mesa?</h3>
+          <p class="dm-sim-sub">Ajuste os valores e veja o quanto você poderia ganhar a mais todo mês.</p>
+        </div>
+        <span class="dm-sim-info">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+          Comissão Hubfi · <b>até 1% sobre o financiamento</b>
+        </span>
+      </header>
+
+      <div class="dm-sim-body">
+
+        <!-- INPUTS -->
+        <div class="dm-sim-inputs">
+
+          <div class="dm-sim-field">
+            <div class="dm-sim-field-head">
+              <label class="dm-sim-field-label" for="dm-clientes">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Clientes que fecham venda por mês
+              </label>
+              <span class="dm-sim-output">
+                <span data-out-clientes>10</span>
+              </span>
+            </div>
+            <div class="dm-sim-slider-wrap">
+              <input type="range" class="dm-sim-range" id="dm-clientes" min="1" max="50" step="1" value="10" data-input-clientes>
+            </div>
+            <div class="dm-sim-range-bounds">
+              <span>1 cliente</span>
+              <span>50 clientes</span>
+            </div>
+          </div>
+
+          <div class="dm-sim-field">
+            <div class="dm-sim-field-head">
+              <label class="dm-sim-field-label" for="dm-ticket">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01M18 12h.01"/></svg>
+                Ticket médio do financiamento
+              </label>
+              <span class="dm-sim-output">
+                <span data-out-ticket>R$ 420k</span>
+              </span>
+            </div>
+            <div class="dm-sim-slider-wrap">
+              <input type="range" class="dm-sim-range" id="dm-ticket" min="100000" max="2000000" step="10000" value="420000" data-input-ticket>
+            </div>
+            <div class="dm-sim-range-bounds">
+              <span>R$ 100k</span>
+              <span>R$ 2M</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RESULT -->
+        <aside class="dm-sim-result">
+          <div class="dm-sim-result-head">você deixa de ganhar</div>
+
+          <span class="dm-sim-result-value" data-out-month>R$ 42.000</span>
+          <span class="dm-sim-result-period">por mês em comissão!</span>
+
+          <div class="dm-sim-result-divider"></div>
+
+          <div class="dm-sim-result-foot">
+            <span class="dm-sim-result-foot-label">No ano</span>
+            <span class="dm-sim-result-foot-value">
+              <span class="dm-sim-result-foot-value-prefix">R$</span><span data-out-year>504.000</span>
+            </span>
+          </div>
+
+          <div class="dm-sim-result-calc">
+            <span data-calc-clientes>10</span> clientes
+            <span class="dm-sim-result-calc-mult">×</span>
+            <span data-calc-ticket>R$ 420k</span>
+            <span class="dm-sim-result-calc-mult">×</span>
+            <b>até 1%</b>
+          </div>
+
+          <a href="#cta" class="dm-sim-cta">
+            Quero parar de perder isso
+            <span class="dm-sim-cta-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </a>
+        </aside>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCRIPT — reveal observer + simulador
+     Cole esse <script> antes do </body> (ou junto com seus outros scripts)
+     ═══════════════════════════════════════════════════════════════ -->
+<script>
+(function(){
+  const section = document.querySelector('.dinheiro-mesa');
+  if (!section) return;
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  io.observe(section);
+
+  // ── Simulador ──
+  const inputClientes = section.querySelector('[data-input-clientes]');
+  const inputTicket = section.querySelector('[data-input-ticket]');
+  const outClientes = section.querySelector('[data-out-clientes]');
+  const outTicket = section.querySelector('[data-out-ticket]');
+  const outMonth = section.querySelector('[data-out-month]');
+  const outYear = section.querySelector('[data-out-year]');
+  const calcClientes = section.querySelector('[data-calc-clientes]');
+  const calcTicket = section.querySelector('[data-calc-ticket]');
+
+  function formatTicket(value) {
+    if (value >= 1000000) {
+      const m = (value / 1000000).toFixed(1).replace('.', ',');
+      return `R$ ${m}M`;
+    }
+    return `R$ ${Math.round(value / 1000)}k`;
+  }
+
+  function formatBRL(value) {
+    return Math.round(value).toLocaleString('pt-BR');
+  }
+
+  function updateSliderTrack(input) {
+    const min = parseFloat(input.min);
+    const max = parseFloat(input.max);
+    const val = parseFloat(input.value);
+    const pct = ((val - min) / (max - min)) * 100;
+    input.style.setProperty('--progress', pct + '%');
+  }
+
+  function pulseValue(el) {
+    el.classList.remove('is-pulse');
+    void el.offsetWidth; // force reflow
+    el.classList.add('is-pulse');
+  }
+
+  function update() {
+    const clientes = parseInt(inputClientes.value);
+    const ticket = parseInt(inputTicket.value);
+
+    outClientes.textContent = clientes;
+    outTicket.textContent = formatTicket(ticket);
+    calcClientes.textContent = clientes;
+    calcTicket.textContent = formatTicket(ticket);
+
+    // clientes × ticket × 1%
+    const perMonth = clientes * ticket * 0.01;
+    const perYear = perMonth * 12;
+
+    outMonth.textContent = 'R$ ' + formatBRL(perMonth);
+    outYear.textContent = formatBRL(perYear);
+
+    updateSliderTrack(inputClientes);
+    updateSliderTrack(inputTicket);
+
+    pulseValue(outMonth);
+  }
+
+  // Initial render
+  updateSliderTrack(inputClientes);
+  updateSliderTrack(inputTicket);
+
+  // Listeners
+  inputClientes.addEventListener('input', update);
+  inputTicket.addEventListener('input', update);
+})();
+</script>
+
+   
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="como-funciona reveal" id="como-funciona">
+ 
+  <span class="cf-header-deco-l"></span>
+  <span class="cf-header-deco-r"></span>
+ 
+  <div class="cf-container">
+ 
+    <header class="cf-header">
+ 
+      <div class="cf-header-dots cf-header-dots--l">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="cf-header-dots cf-header-dots--r">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+ 
+      <span class="cf-eyebrow-pill">
+        <span class="cf-eyebrow-pill-icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </span>
+        <span class="cf-eyebrow-pill-label">Como funciona</span>
+      </span>
+ 
+      <h2 class="cf-headline">
+        <span class="cf-headline-word">Da</span>
+        <span class="cf-headline-word">venda</span>
+        <span class="cf-headline-word">ao</span>
+        <span class="cf-headline-word">financiamento,</span>
+        <span class="cf-headline-word"><span class="cf-headline-accent">você</span></span>
+        <span class="cf-headline-word"><span class="cf-headline-accent">ganha</span></span>
+        <span class="cf-headline-word"><span class="cf-headline-accent cf-headline-mark">duas&nbsp;vezes</span><span class="cf-headline-accent">.</span></span>
+      </h2>
+ 
+    </header>
+ 
+    <!-- ═══ TABS ═══ -->
+    <div class="cf-tabs" role="tablist">
+ 
+      <button class="cf-tab" data-tab="1" role="tab">
+       
+        <span class="cf-tab-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 15 11 17 16 12"/></svg>
+        </span>
+        <span class="cf-tab-label">Você fecha a venda</span>
+        <span class="cf-tab-progress"></span>
+      </button>
+ 
+      <button class="cf-tab" data-tab="2" role="tab">
+      
+        <span class="cf-tab-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+        </span>
+        <span class="cf-tab-label">Indica o cliente</span>
+        <span class="cf-tab-progress"></span>
+      </button>
+ 
+      <button class="cf-tab" data-tab="3" role="tab">
+        
+        <span class="cf-tab-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="21" x2="21" y2="21"/><line x1="3" y1="10" x2="21" y2="10"/><polyline points="5 6 12 3 19 6"/><line x1="4" y1="10" x2="4" y2="21"/><line x1="20" y1="10" x2="20" y2="21"/></svg>
+        </span>
+        <span class="cf-tab-label">Hubfi cuida do financiamento</span>
+        <span class="cf-tab-progress"></span>
+      </button>
+ 
+      <button class="cf-tab" data-tab="4" role="tab">
+        
+        <span class="cf-tab-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </span>
+        <span class="cf-tab-label">Financiamento aprovado</span>
+        <span class="cf-tab-progress"></span>
+      </button>
+ 
+      <button class="cf-tab is-active" data-tab="5" role="tab">
+     
+        <span class="cf-tab-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg>
+        </span>
+        <span class="cf-tab-label">Comissão na sua conta</span>
+        <span class="cf-tab-progress"></span>
+      </button>
+ 
+    </div>
+ 
+    <!-- ═══ TAB CONTENT ═══ -->
+    <div class="cf-tabcontent">
+ 
+      <!-- ═══ PANEL 1: Você fecha a venda ═══ -->
+      <div class="cf-panel" data-panel="1">
+ 
+        <div class="cf-panel-left">
+          <h3 class="cf-panel-heading">
+            <span class="cf-panel-heading-accent">Você fecha</span> a venda como sempre fez.
+          </h3>
+          
+          <p class="cf-panel-desc">
+            <strong>Seu cliente, sua negociação, sua comissão de venda integralmente sua.</strong> A Hubfi não interfere na operação tradicional — só entra depois, quando o cliente precisa financiar.
+          </p>
+ 
+          <ul class="cf-panel-list">
+            <li class="cf-panel-list-item">
+              <span class="cf-panel-list-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div class="cf-panel-list-content">
+                <span class="cf-panel-list-title">Comissão de venda 100% sua</span>
+                <span class="cf-panel-list-desc">R$ 18.000 (3,0% sobre R$ 600.000) sem divisão, sem taxa, sem custo. A Hubfi não toca na comissão de venda.</span>
+              </div>
+            </li>
+            <li class="cf-panel-list-item">
+              <span class="cf-panel-list-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div class="cf-panel-list-content">
+                <span class="cf-panel-list-title">Operação tradicional intacta</span>
+                <span class="cf-panel-list-desc">Cliente, negociação, contrato, comissão de venda — tudo continua exatamente como você já faz hoje.</span>
+              </div>
+            </li>
+          </ul>
+ 
+          <a href="#" class="cf-panel-cta">
+            Fale com um especialista
+            <span class="cf-panel-cta-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </a>
+        </div>
+ 
+        <div class="cf-panel-right">
+          <div class="cf-visual cf-visual--venda">
+ 
+            <div class="cf-visual-floater cf-visual-floater--banks" style="top: 40px; left: -16px; width: 200px;">
+              <span class="cf-visual-floater-tag">venda fechada</span>
+              <div style="font-size:13px;color:#0F1219;font-weight:700;line-height:1.4;margin-bottom:6px;">
+                Apto Vila Mariana
+              </div>
+              <div style="font-size:11px;color:#6B7280;font-weight:500;">
+                R$ 600.000 · contrato assinado
+              </div>
+            </div>
+ 
+            <div class="cf-visual-venda-card">
+              <div class="cf-visual-venda-doc">
+                <div class="cf-visual-venda-doc-head">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  <span class="cf-visual-venda-doc-head-label">contrato · v3</span>
+                </div>
+                <div class="cf-visual-venda-doc-lines">
+                  <span class="cf-visual-venda-doc-line"></span>
+                  <span class="cf-visual-venda-doc-line"></span>
+                  <span class="cf-visual-venda-doc-line"></span>
+                  <span class="cf-visual-venda-doc-line"></span>
+                </div>
+                <div class="cf-visual-venda-doc-sig">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  assinado · 3,0% sobre R$ 600.000
+                </div>
+              </div>
+              <div class="cf-visual-venda-chip">
+                <div class="cf-visual-venda-chip-left">
+                  <span class="cf-visual-venda-chip-tag">comissão venda</span>
+                  <span class="cf-visual-venda-chip-meta">100% sua imobiliária</span>
+                </div>
+                <span class="cf-visual-venda-chip-amount">R$ 18.000</span>
+              </div>
+            </div>
+ 
+            <div class="cf-visual-floater cf-visual-floater--bonus" style="bottom: 60px; right: -16px; width: 220px;">
+              <span class="cf-visual-floater-tag">sua comissão</span>
+              <div style="font-size:14px;color:#0F1219;font-weight:700;line-height:1.4;margin-bottom:6px;">
+                Sem divisão, sem taxa
+              </div>
+              <div style="font-size:11px;color:#6B7280;font-weight:500;">
+                <b style="color:#08574F;">100% integral</b> · operação tradicional intacta
+              </div>
+            </div>
+ 
+          </div>
+        </div>
+ 
+      </div>
+ 
+      <!-- ═══ PANEL 2: Indica o cliente pra Hubfi ═══ -->
+      <div class="cf-panel" data-panel="2">
+ 
+        <div class="cf-panel-left">
+          <h3 class="cf-panel-heading">
+            Em <span class="cf-panel-heading-accent">1 clique</span>, você passa o cliente pra Hubfi.
+          </h3>
+          <span class="cf-panel-bar"></span>
+          <p class="cf-panel-desc">
+            Cadastre o cliente em 30 segundos no nosso app. <strong>A partir daqui, a Hubfi assume todo o financiamento</strong> — você não precisa lidar com banco, documentos ou burocracia. Continue vendendo enquanto a gente cuida do resto.
+          </p>
+ 
+          <ul class="cf-panel-list">
+            <li class="cf-panel-list-item">
+              <span class="cf-panel-list-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div class="cf-panel-list-content">
+                <span class="cf-panel-list-title">Cadastro em 30 segundos</span>
+                <span class="cf-panel-list-desc">Nome, CPF, dados da venda. Pronto. A Hubfi recebe a operação e começa a trabalhar.</span>
+              </div>
+            </li>
+            <li class="cf-panel-list-item">
+              <span class="cf-panel-list-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div class="cf-panel-list-content">
+                <span class="cf-panel-list-title">Zero retrabalho operacional</span>
+                <span class="cf-panel-list-desc">Você não fala com banco, não busca documento, não acompanha processo. A Hubfi assume tudo a partir daqui.</span>
+              </div>
+            </li>
+          </ul>
+ 
+          <a href="#" class="cf-panel-cta">
+            Fale com um especialista
+            <span class="cf-panel-cta-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </a>
+        </div>
+ 
+        <div class="cf-panel-right">
+          <div class="cf-visual cf-visual--handoff">
+ 
+            <div class="cf-visual-floater cf-visual-floater--banks" style="top: 30px; left: -16px; width: 200px;">
+              <span class="cf-visual-floater-tag">sua imobiliária</span>
+              <div style="font-size:13px;color:#0F1219;font-weight:700;line-height:1.4;margin-bottom:6px;">
+                Indicou o cliente
+              </div>
+              <div style="font-size:11px;color:#6B7280;font-weight:500;">
+                Operação <b style="color:#08574F;">#17328</b> · venda fechada
+              </div>
+            </div>
+ 
+            <div class="cf-visual-handoff-card">
+              <div class="cf-visual-handoff-head">
+                <span class="cf-visual-handoff-head-tag">cadastrar cliente</span>
+                <span class="cf-visual-handoff-head-step">D+1</span>
+              </div>
+ 
+              <div class="cf-visual-handoff-client">
+                <span class="cf-visual-handoff-client-avatar">M</span>
+                <div class="cf-visual-handoff-client-info">
+                  <span class="cf-visual-handoff-client-name">Mariana Silva</span>
+                  <span class="cf-visual-handoff-client-meta">CPF 123.456.789-00</span>
+                </div>
+              </div>
+ 
+              <div class="cf-visual-handoff-fields">
+                <div class="cf-visual-handoff-field">
+                  <span class="cf-visual-handoff-field-label">Valor venda</span>
+                  <span class="cf-visual-handoff-field-value">R$ 600.000</span>
+                </div>
+                <div class="cf-visual-handoff-field">
+                  <span class="cf-visual-handoff-field-label">Entrada</span>
+                  <span class="cf-visual-handoff-field-value">R$ 180.000 · 30%</span>
+                </div>
+                <div class="cf-visual-handoff-field">
+                  <span class="cf-visual-handoff-field-label">Financiar</span>
+                  <span class="cf-visual-handoff-field-value cf-visual-handoff-field-value-success">R$ 420.000</span>
+                </div>
+              </div>
+ 
+              <div class="cf-visual-handoff-cta">
+                <span class="cf-visual-handoff-cta-label">Enviar pra Hubfi</span>
+                <span class="cf-visual-handoff-cta-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </span>
+              </div>
+ 
+              <div class="cf-visual-handoff-time">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                concluído em <b>28 segundos</b>
+              </div>
+            </div>
+ 
+            <div class="cf-visual-floater cf-visual-floater--bonus" style="bottom: 60px; right: -16px; width: 200px;">
+              <span class="cf-visual-floater-tag">hubfi assume</span>
+              <div style="font-size:14px;color:#0F1219;font-weight:700;line-height:1.4;margin-bottom:6px;">
+                Banco, docs, jurídico
+              </div>
+              <div style="font-size:11px;color:#6B7280;font-weight:500;">
+                <b style="color:#08574F;">Você</b> não mexe um dedo
+              </div>
+            </div>
+ 
+          </div>
+        </div>
+ 
+      </div>
+ 
+      <!-- ═══ PANEL 3: Hubfi cuida do financiamento ═══ -->
+      <div class="cf-panel" data-panel="3">
+ 
+        <div class="cf-panel-left">
+          <h3 class="cf-panel-heading">
+            Nossa equipe <span class="cf-panel-heading-accent">conduz todo</span> o financiamento.
+          </h3>
+          <span class="cf-panel-bar"></span>
+          <p class="cf-panel-desc">
+            <strong>16 bancos comparados, documentação organizada, análise de crédito, negociação de taxa, jurídico.</strong> A Hubfi faz tudo — você acompanha em tempo real, sem precisar mexer um dedo. O cliente é atendido por quem sabe.
+          </p>
+ 
+          <ul class="cf-panel-list">
+            <li class="cf-panel-list-item">
+              <span class="cf-panel-list-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div class="cf-panel-list-content">
+                <span class="cf-panel-list-title">16 bancos comparados em 3,2s</span>
+                <span class="cf-panel-list-desc">Itaú venceu com Pró-Cotista 9,79% — 1,10pp abaixo do segundo colocado. Cliente ganha a melhor taxa do mercado.</span>
+              </div>
+            </li>
+            <li class="cf-panel-list-item">
+              <span class="cf-panel-list-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div class="cf-panel-list-content">
+                <span class="cf-panel-list-title">Tudo conduzido pela Hubfi</span>
+                <span class="cf-panel-list-desc">Documentação, análise de crédito, negociação com banco, parecer jurídico, acompanhamento até a aprovação. Você só observa o progresso.</span>
+              </div>
+            </li>
+          </ul>
+ 
+          <a href="#" class="cf-panel-cta">
+            Fale com um especialista
+            <span class="cf-panel-cta-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </a>
+        </div>
+ 
+        <div class="cf-panel-right">
+          <div class="cf-visual cf-visual--hubfi">
+ 
+            <div class="cf-visual-floater cf-visual-floater--banks" style="top: 40px; left: -16px; width: 200px;">
+              <span class="cf-visual-floater-tag">análise hubfi</span>
+              <div style="font-size:13px;color:#0F1219;font-weight:700;line-height:1.4;margin-bottom:6px;">
+                3,2 segundos
+              </div>
+              <div style="font-size:11px;color:#6B7280;font-weight:500;">
+                <b style="color:#0F1219;">16 bancos</b> · TR + taxa + LTV
+              </div>
+            </div>
+ 
+            <div class="cf-visual-hubfi-card">
+              <div class="cf-visual-hubfi-head">
+                <span class="cf-visual-hubfi-tag">comparando · D+5</span>
+                <span class="cf-visual-hubfi-time">análise: 3,2s</span>
+              </div>
+              <div class="cf-visual-hubfi-list">
+                <div class="cf-visual-hubfi-row cf-visual-hubfi-row--top">
+                  <span class="cf-visual-hubfi-rank">1</span>
+                  <div class="cf-visual-hubfi-name">
+                    <span class="cf-visual-hubfi-name-bank">Itaú</span>
+                    <span class="cf-visual-hubfi-name-prod">Pró-Cotista · 360 meses</span>
+                  </div>
+                  <span class="cf-visual-hubfi-rate">9,79%</span>
+                  <span class="cf-visual-hubfi-tag-pill">Vence</span>
+                </div>
+                <div class="cf-visual-hubfi-row">
+                  <span class="cf-visual-hubfi-rank">2</span>
+                  <div class="cf-visual-hubfi-name">
+                    <span class="cf-visual-hubfi-name-bank">Santander</span>
+                    <span class="cf-visual-hubfi-name-prod">CSI · 360 meses</span>
+                  </div>
+                  <span class="cf-visual-hubfi-rate">10,42%</span>
+                  <span class="cf-visual-hubfi-tag-pill">+0,63 pp</span>
+                </div>
+                <div class="cf-visual-hubfi-row">
+                  <span class="cf-visual-hubfi-rank">3</span>
+                  <div class="cf-visual-hubfi-name">
+                    <span class="cf-visual-hubfi-name-bank">Bradesco</span>
+                    <span class="cf-visual-hubfi-name-prod">SBPE · 360 meses</span>
+                  </div>
+                  <span class="cf-visual-hubfi-rate">10,89%</span>
+                  <span class="cf-visual-hubfi-tag-pill">+1,10 pp</span>
+                </div>
+                <div class="cf-visual-hubfi-row">
+                  <span class="cf-visual-hubfi-rank">4</span>
+                  <div class="cf-visual-hubfi-name">
+                    <span class="cf-visual-hubfi-name-bank">Caixa</span>
+                    <span class="cf-visual-hubfi-name-prod">SBPE · 360 meses</span>
+                  </div>
+                  <span class="cf-visual-hubfi-rate">11,12%</span>
+                  <span class="cf-visual-hubfi-tag-pill">+1,33 pp</span>
+                </div>
+              </div>
+              <div class="cf-visual-hubfi-foot">
+                <span>+12 bancos analisados</span>
+                <span class="cf-visual-hubfi-foot-win">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Itaú vence
+                </span>
+              </div>
+            </div>
+ 
+            <div class="cf-visual-floater cf-visual-floater--bonus" style="bottom: 60px; right: -16px; width: 200px;">
+              <span class="cf-visual-floater-tag">você acompanha</span>
+              <div style="font-size:14px;color:#0F1219;font-weight:700;line-height:1.4;margin-bottom:6px;">
+                Sem mexer um dedo
+              </div>
+              <div style="font-size:11px;color:#6B7280;font-weight:500;">
+                <b style="color:#08574F;">Hubfi</b> faz tudo · docs, banco, jurídico
+              </div>
+            </div>
+ 
+          </div>
+        </div>
+ 
+      </div>
+ 
+      <!-- ═══ PANEL 4: Financiamento aprovado ═══ -->
+      <div class="cf-panel" data-panel="4">
+ 
+        <div class="cf-panel-left">
+          <h3 class="cf-panel-heading">
+            Financiamento <span class="cf-panel-heading-accent">aprovado</span>. Cliente satisfeito.
+          </h3>
+          <span class="cf-panel-bar"></span>
+          <p class="cf-panel-desc">
+            Banco libera <strong>R$ 420.000</strong>, escritura registrada, cliente feliz com a melhor taxa do mercado. Você fechou uma venda perfeita — com cliente bem atendido pela Hubfi durante todo o processo de financiamento.
+          </p>
+ 
+          <ul class="cf-panel-list">
+            <li class="cf-panel-list-item">
+              <span class="cf-panel-list-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div class="cf-panel-list-content">
+                <span class="cf-panel-list-title">R$ 420.000 aprovados no Itaú</span>
+                <span class="cf-panel-list-desc">Pró-Cotista 9,79% a.a., 360 meses, LTV 70%. A melhor condição encontrada entre 16 bancos — só a Hubfi consegue isso.</span>
+              </div>
+            </li>
+            <li class="cf-panel-list-item">
+              <span class="cf-panel-list-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div class="cf-panel-list-content">
+                <span class="cf-panel-list-title">Cliente satisfeito com a operação</span>
+                <span class="cf-panel-list-desc">Fechamento em 15 dias, taxa imbatível, atendimento profissional. Cliente bem atendido = cliente que indica sua imobiliária.</span>
+              </div>
+            </li>
+          </ul>
+ 
+          <a href="#" class="cf-panel-cta">
+            Fale com um especialista
+            <span class="cf-panel-cta-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </a>
+        </div>
+ 
+        <div class="cf-panel-right">
+          <div class="cf-visual cf-visual--finapproved">
+ 
+            <div class="cf-visual-floater cf-visual-floater--banks" style="top: 50px; left: -16px; width: 200px;">
+              <span class="cf-visual-floater-tag">aprovação</span>
+              <div style="font-size:13px;color:#0F1219;font-weight:700;line-height:1.4;margin-bottom:6px;">
+                Em 10 dias úteis
+              </div>
+              <div style="font-size:11px;color:#6B7280;font-weight:500;">
+                <b style="color:#0F1219;">D+5</b> análise · <b style="color:#08574F;">D+10</b> aprovado
+              </div>
+            </div>
+ 
+            <div class="cf-visual-finapproved-card">
+              <span class="cf-visual-finapproved-stamp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Financiamento aprovado
+              </span>
+ 
+              <div class="cf-visual-finapproved-bank">
+                <div class="cf-visual-finapproved-bank-logo">i</div>
+                <div class="cf-visual-finapproved-bank-info">
+                  <span class="cf-visual-finapproved-bank-name">Itaú · Pró-Cotista</span>
+                  <span class="cf-visual-finapproved-bank-prod">Operação #17328 · D+10</span>
+                </div>
+              </div>
+ 
+              <div class="cf-visual-finapproved-amount-row">
+                <span class="cf-visual-finapproved-amount-label">Valor financiado</span>
+                <span class="cf-visual-finapproved-amount">
+                  <span class="cf-visual-finapproved-amount-prefix">R$</span>420.000
+                </span>
+              </div>
+ 
+              <div class="cf-visual-finapproved-info">
+                <div class="cf-visual-finapproved-info-item">
+                  <span class="cf-visual-finapproved-info-label">Taxa</span>
+                  <span class="cf-visual-finapproved-info-value">9,79% a.a.</span>
+                </div>
+                <div class="cf-visual-finapproved-info-item">
+                  <span class="cf-visual-finapproved-info-label">Prazo</span>
+                  <span class="cf-visual-finapproved-info-value">360 meses</span>
+                </div>
+                <div class="cf-visual-finapproved-info-item">
+                  <span class="cf-visual-finapproved-info-label">LTV</span>
+                  <span class="cf-visual-finapproved-info-value">70%</span>
+                </div>
+                <div class="cf-visual-finapproved-info-item">
+                  <span class="cf-visual-finapproved-info-label">Prestação</span>
+                  <span class="cf-visual-finapproved-info-value">R$ 3.582</span>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="cf-visual-floater cf-visual-floater--bonus" style="bottom: 50px; right: -16px; width: 200px;">
+              <span class="cf-visual-floater-tag">cliente satisfeito</span>
+              <div style="font-size:14px;color:#0F1219;font-weight:700;line-height:1.4;margin-bottom:6px;">
+                Melhor taxa do mercado
+              </div>
+              <div style="font-size:11px;color:#6B7280;font-weight:500;">
+                <b style="color:#08574F;">Sua imobiliária</b> ganha credibilidade
+              </div>
+            </div>
+ 
+          </div>
+        </div>
+ 
+      </div>
+ 
+            <!-- PANEL 5: Aprovado (default visible) -->
+      <div class="cf-panel is-visible" data-panel="5">
+ 
+        <div class="cf-panel-left">
+          <h3 class="cf-panel-heading">
+            <span class="cf-panel-heading-accent">Comissão CORBAN</span> cai na sua conta.
+          </h3>
+          <span class="cf-panel-bar"></span>
+          <p class="cf-panel-desc">
+            <strong>+R$ 8.400 extras</strong> pela mesma venda que você já fechou — sem mudar absolutamente nada na sua operação. Sua imobiliária faturando <strong>+47% por contrato fechado</strong>, na mesma operação, mesmo cliente.
+          </p>
+ 
+          <ul class="cf-panel-list">
+            <li class="cf-panel-list-item">
+              <span class="cf-panel-list-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div class="cf-panel-list-content">
+                <span class="cf-panel-list-title">+R$ 8.400 extras por operação</span>
+                <span class="cf-panel-list-desc">Comissão CORBAN dividida com sua imobiliária (2,0% sobre R$ 420k financiado). Pago direto na sua conta no fechamento do contrato.</span>
+              </div>
+            </li>
+            <li class="cf-panel-list-item">
+              <span class="cf-panel-list-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div class="cf-panel-list-content">
+                <span class="cf-panel-list-title">+47% receita por venda fechada</span>
+                <span class="cf-panel-list-desc">Sua comissão de venda continua integralmente sua. A Hubfi adiciona uma segunda receita ao mesmo contrato — sem esforço extra.</span>
+              </div>
+            </li>
+          </ul>
+ 
+          <a href="#" class="cf-panel-cta">
+            Fale com um especialista
+            <span class="cf-panel-cta-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </a>
+        </div>
+ 
+        <div class="cf-panel-right">
+          <div class="cf-visual cf-visual--aprovado">
+ 
+            <!-- Floating banks card top-left -->
+            <div class="cf-visual-floater cf-visual-floater--banks">
+              <span class="cf-visual-floater-tag">16 bancos · Itaú vence</span>
+              <div class="cf-visual-floater-banks-list">
+                <div class="cf-visual-floater-banks-row cf-visual-floater-banks-row--top">
+                  <span class="cf-visual-floater-banks-rank">1</span>
+                  <span class="cf-visual-floater-banks-name">Itaú · Pró-Cotista</span>
+                  <span class="cf-visual-floater-banks-rate">9,79%</span>
+                </div>
+                <div class="cf-visual-floater-banks-row">
+                  <span class="cf-visual-floater-banks-rank">2</span>
+                  <span class="cf-visual-floater-banks-name">Santander · CSI</span>
+                  <span class="cf-visual-floater-banks-rate">10,42%</span>
+                </div>
+                <div class="cf-visual-floater-banks-row">
+                  <span class="cf-visual-floater-banks-rank">3</span>
+                  <span class="cf-visual-floater-banks-name">Bradesco · SBPE</span>
+                  <span class="cf-visual-floater-banks-rate">10,89%</span>
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Big approved card center -->
+            <div class="cf-visual-approved-card">
+              <span class="cf-visual-approved-tag">
+                <span class="cf-visual-approved-check">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                Comissão extra · D+15
+              </span>
+              <div class="cf-visual-approved-amount">
+                <span class="cf-visual-approved-amount-prefix">+R$</span>8.400
+              </div>
+              <div class="cf-visual-approved-meta">
+                <b>2,0%</b> sobre R$ 420.000 financiados
+              </div>
+              <div class="cf-visual-approved-divider"></div>
+              <div class="cf-visual-approved-info">
+                <div class="cf-visual-approved-info-row">
+                  <span>Banco</span>
+                  <b>Itaú · Pró-Cotista</b>
+                </div>
+                <div class="cf-visual-approved-info-row">
+                  <span>Taxa</span>
+                  <b>9,79% a.a.</b>
+                </div>
+                <div class="cf-visual-approved-info-row">
+                  <span>Prazo</span>
+                  <b>360 meses</b>
+                </div>
+                <div class="cf-visual-approved-info-row">
+                  <span>Operação total</span>
+                  <b>R$ 26.400 · +47%</b>
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Floating bonus card bottom-right -->
+            <div class="cf-visual-floater cf-visual-floater--bonus">
+              <span class="cf-visual-floater-tag">comissão dividida</span>
+              <div class="cf-visual-floater-bonus-amount">
+                <span class="cf-visual-floater-bonus-prefix">+R$</span>8.400
+              </div>
+              <div class="cf-visual-floater-bonus-meta">
+                <b>+47%</b> vs operação tradicional
+              </div>
+            </div>
+ 
+          </div>
+        </div>
+ 
+      </div>
+ 
+    </div>
+ 
+  </div>
+</section>
+
+ 
+<script>
+const section = document.querySelector('.como-funciona');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.05 });
+if (section) observer.observe(section);
+ 
+// Tab switching com auto-advance carrossel
+const tabs = document.querySelectorAll('.cf-tab');
+const panels = document.querySelectorAll('.cf-panel');
+const tabsContainer = document.querySelector('.cf-tabs');
+const TOTAL_TABS = tabs.length;
+const AUTOPLAY_MS = 5500;
+ 
+let currentTab = 5; // start at panel 5 (Aprovado)
+let autoplayTimer = null;
+let isPaused = false;
+ 
+function showTab(num) {
+  const targetPanel = document.querySelector(`.cf-panel[data-panel="${num}"]`);
+  if (!targetPanel) return;
+  currentTab = num;
+  // Update tabs
+  tabs.forEach(t => {
+    const isThisOne = parseInt(t.getAttribute('data-tab')) === num;
+    t.classList.toggle('is-active', isThisOne);
+  });
+  // Update panels (force reflow to restart entrance animations)
+  panels.forEach(p => {
+    const isVisible = p.getAttribute('data-panel') === String(num);
+    if (isVisible) {
+      p.classList.remove('is-visible');
+      void p.offsetWidth; // force reflow
+      p.classList.add('is-visible');
+    } else {
+      p.classList.remove('is-visible');
+    }
+  });
+}
+ 
+function scheduleNext() {
+  clearTimeout(autoplayTimer);
+  autoplayTimer = setTimeout(() => {
+    if (isPaused) {
+      // Re-schedule check
+      scheduleNext();
+      return;
+    }
+    const next = (currentTab % TOTAL_TABS) + 1;
+    showTab(next);
+    scheduleNext();
+  }, AUTOPLAY_MS);
+}
+ 
+// Pause on hover (entire tabs+content area)
+const carousel = document.querySelector('.cf-tabs');
+const content = document.querySelector('.cf-tabcontent');
+[carousel, content].forEach(el => {
+  if (!el) return;
+  el.addEventListener('mouseenter', () => {
+    isPaused = true;
+    tabs.forEach(t => t.classList.add('is-paused'));
+  });
+  el.addEventListener('mouseleave', () => {
+    isPaused = false;
+    tabs.forEach(t => t.classList.remove('is-paused'));
+  });
+});
+ 
+// Manual click - jump and reset autoplay
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = parseInt(tab.getAttribute('data-tab'));
+    showTab(target);
+    scheduleNext();
+  });
+});
+ 
+// Start autoplay after section is visible
+function startWhenVisible() {
+  if (section && section.classList.contains('in')) {
+    scheduleNext();
+  } else {
+    setTimeout(startWhenVisible, 200);
+  }
+}
+setTimeout(startWhenVisible, 1500);
+</script>
+
+
+
+<!-- ========= SEÇÃO HUBFI HOJE  fundo claro, 4 stat cards ========= -->
+<section class="py-24 lg:py-32 bg-paper-50 relative overflow-hidden">
+
+<div class="absolute inset-0 pointer-events-none">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] rounded-full bg-teal-100/30 blur-3xl"></div>
+</div>
+<div class="relative max-w-[1280px] mx-auto px-6">
+<div class="reveal text-center max-w-[760px] mx-auto mb-12">
+<div class="section-eyebrow">
+<span class="frame-icon-xs">
+<span class="frame-icon-xs-inner">
+<svg fill="none" height="14" viewbox="0 0 24 24" width="14">
+<path d="M13 2L4.5 13.5h7L11 22l8.5-11.5h-7L13 2z" stroke="#0A7165" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path>
+<circle cx="11" cy="13" fill="#3DB29C" r="1.6"></circle>
+</svg>
+</span>
+</span>
+<span class="section-eyebrow-label">Realtime completo </span>
+<span class="section-eyebrow-meta">da sua operação</span>
+</div>
+</div>
+<div class="reveal-stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 relative" data-rt-grid="">
+<!-- Card 1: Operação -->
+<div class="hubfi-stat-card rt-stat-card" data-rt-card="">
+<div class="flex items-start justify-between mb-6">
+<span class="frame-icon">
+<span class="frame-icon-inner">
+<svg fill="none" height="22" stroke="#0E8B7A" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+</svg>
+</span>
+</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.14em] text-teal-700 bg-teal-50 px-2 py-1 rounded">Operação</span>
+</div>
+<div class="hubfi-num-stack">
+<div class="hubfi-stat-num" data-counter-format="br-int" data-counter-to="1247">0</div>
+</div>
+<div class="text-[14px] text-ink-500 mt-2.5">operações em andamento</div>
+<div class="mt-6 pt-4 border-t border-paper-100 flex items-center justify-between text-[12px]">
+<span class="text-ink-400 inline-flex items-center gap-1.5">
+<span class="w-1 h-1 rounded-full bg-emerald-500 live-blink"></span>
+            atualizado há 2 min
+          </span>
+<span class="font-semibold text-emerald-600 inline-flex items-center gap-1">
+<svg fill="none" height="22" viewbox="0 0 24 24" width="22">
+<path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="#0A7165" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path>
+<circle cx="20" cy="12" fill="#3DB29C" r="1.6"></circle>
+</svg>
+            +12%
+          </span>
+</div>
+</div>
+<!-- Card 2: Volume -->
+<div class="hubfi-stat-card rt-stat-card" data-rt-card="">
+<div class="flex items-start justify-between mb-6">
+<span class="frame-icon">
+<span class="frame-icon-inner">
+<svg fill="none" height="22" viewbox="0 0 24 24" width="22">
+<rect height="13" rx="2" stroke="#0A7165" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" width="18" x="3" y="6"></rect>
+<path d="M3 10h18" stroke="#0A7165" stroke-linecap="round" stroke-width="1.7"></path>
+<circle cx="8" cy="15" fill="#3DB29C" r="1.6"></circle>
+</svg>
+</span>
+</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.14em] text-teal-700 bg-teal-50 px-2 py-1 rounded">Volume</span>
+</div>
+<div class="hubfi-num-stack">
+<div class="hubfi-stat-num"><span data-counter-prefix="R$ " data-counter-to="112">R$ 0</span><small>M</small></div>
+</div>
+<div class="text-[14px] text-ink-500 mt-2.5">em propostas no pipeline</div>
+<div class="mt-6 pt-4 border-t border-paper-100 flex items-center justify-between text-[12px]">
+<span class="text-ink-400">R$ 84M só hoje</span>
+<span class="font-semibold text-ink-700">2.847 props.</span>
+</div>
+</div>
+<!-- Card 3: Aprovação -->
+<div class="hubfi-stat-card rt-stat-card" data-rt-card="">
+<div class="flex items-start justify-between mb-6">
+<span class="frame-icon">
+<span class="frame-icon-inner">
+<svg fill="none" height="22" viewbox="0 0 24 24" width="22">
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#0A7165" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path>
+<path d="m9 12 2 2 4-4" stroke="#3DB29C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9"></path>
+</svg>
+</span>
+</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.14em] text-teal-700 bg-teal-50 px-2 py-1 rounded">Aprovação</span>
+</div>
+<div class="hubfi-num-stack">
+<div class="hubfi-stat-num"><span data-counter-to="87">0</span><small>%</small></div>
+</div>
+<div class="text-[14px] text-ink-500 mt-2.5">chance média de aprovar</div>
+<div class="mt-6 pt-4 border-t border-paper-100 flex items-center justify-between text-[12px]">
+<span class="text-ink-400">última semana</span>
+<span class="font-semibold text-ink-700">2,8d médio</span>
+</div>
+</div>
+<!-- Card 4: Cobertura -->
+<div class="hubfi-stat-card rt-stat-card" data-rt-card="">
+<div class="flex items-start justify-between mb-6">
+<span class="frame-icon">
+<span class="frame-icon-inner">
+<svg fill="none" height="22" viewbox="0 0 24 24" width="22">
+<circle cx="6" cy="6" r="2.5" stroke="#0A7165" stroke-width="1.7"></circle>
+<circle cx="18" cy="6" r="2.5" stroke="#0A7165" stroke-width="1.7"></circle>
+<circle cx="6" cy="18" r="2.5" stroke="#0A7165" stroke-width="1.7"></circle>
+<circle cx="18" cy="18" r="2.5" stroke="#0A7165" stroke-width="1.7"></circle>
+<circle cx="12" cy="12" fill="#3DB29C" r="2.5"></circle>
+<path d="M8 8l2 2M14 8l-2 2M8 16l2-2M14 16l-2-2" stroke="#0A7165" stroke-linecap="round" stroke-width="1.5"></path>
+</svg>
+</span>
+</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.14em] text-teal-700 bg-teal-50 px-2 py-1 rounded">Cobertura</span>
+</div>
+<div class="hubfi-num-stack">
+<div class="hubfi-stat-num"><span data-counter-to="10">0</span><small> bancos</small></div>
+</div>
+<div class="text-[14px] text-ink-500 mt-2.5">conectados em paralelo</div>
+<div class="mt-6 pt-4 border-t border-paper-100">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-1">
+<div class="w-5 h-5 rounded-full ring-2 ring-white bg-teal-600 flex items-center justify-center text-white text-[7.5px] font-bold">It</div>
+<div class="w-5 h-5 rounded-full ring-2 ring-white bg-blue-600 flex items-center justify-center text-white text-[7.5px] font-bold">CE</div>
+<div class="w-5 h-5 rounded-full ring-2 ring-white bg-red-700 flex items-center justify-center text-white text-[7.5px] font-bold">BR</div>
+<div class="w-5 h-5 rounded-full ring-2 ring-white bg-red-600 flex items-center justify-center text-white text-[7.5px] font-bold">SA</div>
+</div>
+<span class="text-[12px] text-ink-400">+6 outros</span>
+</div>
+</div>
+</div>
+<!-- Cursor ghost do loop Realtime -->
+<div aria-hidden="true" class="ghost-cursor" data-rt-cursor="">
+<svg fill="#1A1F2E" height="22" stroke="white" stroke-linejoin="round" stroke-width="1.4" viewbox="0 0 24 24" width="22"><path d="M5 3l6 16 2.5-6.5L20 10z"></path></svg>
+<span class="ghost-cursor-ripple"></span>
+</div>
+</div>
+<!-- Live Activity Ticker -->
+<div aria-label="Atividade ao vivo" aria-live="polite" class="reveal mt-5 live-ticker" role="status">
+<div class="live-ticker-head">
+<div class="flex items-center gap-2.5">
+<span class="relative flex w-2 h-2">
+<span class="absolute inset-0 rounded-full bg-emerald-500 ripple"></span>
+<span class="relative w-2 h-2 rounded-full bg-emerald-500"></span>
+</span>
+<span class="text-[11px] font-bold uppercase tracking-[0.16em] text-ink-700">Em ação agora</span>
+<span class="text-[10.5px] text-ink-400 hidden sm:inline">· últimos 5 minutos</span>
+</div>
+<div class="flex items-center gap-2.5 text-[11.5px] text-ink-500">
+<span><b class="text-ink-950">23</b> ações</span>
+<svg aria-hidden="true" fill="none" height="14" viewbox="0 0 48 14" width="48">
+<path d="M1 11 L7 9 L13 6 L19 8 L25 4 L31 5 L37 2 L47 3" fill="none" stroke="#0E8B7A" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+<circle cx="47" cy="3" fill="#0E8B7A" r="2"></circle>
+</svg>
+</div>
+</div>
+<div class="live-ticker-body marquee-mask overflow-hidden">
+<div class="flex marquee-track gap-3">
+<span class="live-chip"><span class="live-chip-icon live-chip-icon--teal"><svg fill="none" height="11" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="11"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span><span class="live-chip-text">Score IA · <b>Beatriz Ramos</b> aprovada com <b>87%</b><span class="live-chip-time">09:14</span></span></span>
+<span class="live-chip"><span class="live-chip-icon live-chip-icon--emerald"><svg fill="none" height="11" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="11"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span><span class="live-chip-text">Auto-cobrança · WhatsApp pra <b>Pedro Costa</b><span class="live-chip-time">09:13</span></span></span>
+<span class="live-chip"><span class="live-chip-icon live-chip-icon--red"><svg fill="none" height="11" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="11"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><path d="M12 9v4M12 17h.01"></path></svg></span><span class="live-chip-text">Risco · <b>Pedro Leal</b> sem responder há 4d<span class="live-chip-time">09:11</span></span></span>
+<span class="live-chip"><span class="live-chip-icon live-chip-icon--violet"><svg fill="none" height="11" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="11"><path d="M3 3v18h18"></path><path d="M7 14l4-4 3 3 5-6"></path></svg></span><span class="live-chip-text">Insight · <b>Itaú</b> lidera SLA com 1,2d<span class="live-chip-time">09:10</span></span></span>
+<span class="live-chip"><span class="live-chip-icon live-chip-icon--teal"><svg fill="none" height="11" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="11"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span><span class="live-chip-text">Score IA · <b>João Silva</b> recomendado pra Itaú<span class="live-chip-time">09:09</span></span></span>
+<span class="live-chip"><span class="live-chip-icon live-chip-icon--emerald"><svg fill="none" height="11" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="11"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span><span class="live-chip-text">Auto-cobrança · 7 holerites recebidos<span class="live-chip-time">09:07</span></span></span>
+<span aria-hidden="true" class="live-chip"><span class="live-chip-icon live-chip-icon--teal"><svg fill="none" height="11" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="11"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span><span class="live-chip-text">Score IA · <b>Beatriz Ramos</b> aprovada com <b>87%</b><span class="live-chip-time">09:14</span></span></span>
+<span aria-hidden="true" class="live-chip"><span class="live-chip-icon live-chip-icon--emerald"><svg fill="none" height="11" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="11"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span><span class="live-chip-text">Auto-cobrança · WhatsApp pra <b>Pedro Costa</b><span class="live-chip-time">09:13</span></span></span>
+<span aria-hidden="true" class="live-chip"><span class="live-chip-icon live-chip-icon--red"><svg fill="none" height="11" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="11"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><path d="M12 9v4M12 17h.01"></path></svg></span><span class="live-chip-text">Risco · <b>Pedro Leal</b> sem responder há 4d<span class="live-chip-time">09:11</span></span></span>
+<span aria-hidden="true" class="live-chip"><span class="live-chip-icon live-chip-icon--violet"><svg fill="none" height="11" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="11"><path d="M3 3v18h18"></path><path d="M7 14l4-4 3 3 5-6"></path></svg></span><span class="live-chip-text">Insight · <b>Itaú</b> lidera SLA com 1,2d<span class="live-chip-time">09:10</span></span></span>
+<span aria-hidden="true" class="live-chip"><span class="live-chip-icon live-chip-icon--teal"><svg fill="none" height="11" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="11"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span><span class="live-chip-text">Score IA · <b>João Silva</b> recomendado pra Itaú<span class="live-chip-time">09:09</span></span></span>
+<span aria-hidden="true" class="live-chip"><span class="live-chip-icon live-chip-icon--emerald"><svg fill="none" height="11" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="11"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span><span class="live-chip-text">Auto-cobrança · 7 holerites recebidos<span class="live-chip-time">09:07</span></span></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- ========= BENTO 5 CARDS ========= -->
+<section class="py-24 lg:py-32 bg-paper-50/40 relative overflow-hidden">
+<div class="absolute inset-0 pointer-events-none">
+<div class="absolute top-1/3 -left-32 w-[400px] h-[400px] rounded-full bg-teal-200/20 blur-3xl"></div>
+<div class="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-teal-300/15 blur-3xl"></div>
+</div>
+<div class="max-w-[1280px] mx-auto px-6 relative">
+<div class="max-w-[760px] mx-auto text-center mb-12 reveal">
+<div class="section-eyebrow mb-6">
+<span class="frame-icon-xs">
+<span class="frame-icon-xs-inner">
+<svg fill="none" height="14" viewbox="0 0 24 24" width="14">
+<path d="M3 3v18h18" stroke="#0A7165" stroke-linecap="round" stroke-width="1.7"></path>
+<path d="M7 14l4-4 3 3 5-6" stroke="#3DB29C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9"></path>
+</svg>
+</span>
+</span>
+<span class="section-eyebrow-label">Em números</span>
+<span class="section-eyebrow-divider"></span>
+<span class="section-eyebrow-meta">Atualizado abr/2026</span>
+</div>
+<h2 class="mt-3 text-[36px] md:text-[52px] leading-[1.04] font-bold text-ink-950 text-balance">O maior <span class="text-teal-500">ecossistema</span> de crédito imobiliário do Brasil.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-5 bento-grid">
+<!-- CARD 1: VOLUME -->
+<div class="bento-card md:col-span-12 lg:col-span-7 lg:row-span-2 rounded-lg bg-white ring-1 ring-paper-200 p-8 lg:p-10 hover:shadow-card relative overflow-hidden">
+<div class="flex items-center justify-between mb-7">
+<span class="bento-eyebrow"><span class="status-dot"></span>Volume operado</span>
+<span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-1 rounded-md">+38% +</span>
+</div>
+<div class="text-[64px] md:text-[80px] lg:text-[92px] font-bold text-ink-950 leading-[0.92] tracking-[-0.04em] tabular-nums">
+          R$ 250<span class="text-teal-500">M</span>
+</div>
+<div class="text-[15px] text-ink-500 mt-3 leading-relaxed">em crédito imobiliário operado desde 2024</div>
+<div class="bento-volume-chart">
+<svg aria-hidden="true" preserveaspectratio="none" viewbox="0 0 600 160">
+<defs>
+<lineargradient id="volArea" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#0E8B7A" stop-opacity=".22"></stop>
+<stop offset="100%" stop-color="#0E8B7A" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<line stroke="#E5E7EB" stroke-dasharray="3 4" stroke-width="1" vector-effect="non-scaling-stroke" x1="0" x2="600" y1="55" y2="55"></line>
+<text fill="#9CA3AF" font-family="Inter, system-ui, sans-serif" font-size="9.5" font-weight="500" letter-spacing="0.4" x="0" y="48">+R$ 8bi</text>
+<path class="bento-volume-area" d="M 0 130 C 60 122, 90 116, 120 108 S 200 92, 240 80 S 340 60, 380 48 S 480 32, 540 16 L 600 8 L 600 160 L 0 160 Z" fill="url(#volArea)" stroke="none"></path>
+<path class="bento-volume-line" d="M 0 130 C 60 122, 90 116, 120 108 S 200 92, 240 80 S 340 60, 380 48 S 480 32, 540 16 L 600 8" fill="none" stroke="#0E8B7A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" vector-effect="non-scaling-stroke"></path>
+<circle class="bento-volume-dot-ring" cx="600" cy="8" fill="none" r="5" stroke="#0E8B7A" stroke-width="2"></circle>
+<circle class="bento-volume-dot" cx="600" cy="8" fill="#0E8B7A" r="5"></circle>
+</svg>
+</div>
+<div class="flex justify-between mt-3 text-[10.5px] text-ink-400 font-medium tracking-wide">
+<span>2024/1</span><span>2024/2</span><span>2025/1</span><span>2025/2</span><span>2026</span>
+</div>
+<div class="bento-volume-stats">
+<div class="bento-volume-stat">
+<div class="bento-volume-stat-head">
+<span class="bento-volume-stat-icon bento-volume-stat-icon--teal">
+<svg fill="none" height="12" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="12"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<span class="bento-volume-stat-label">Operações</span>
+</div>
+<div class="bento-volume-stat-v">+47k</div>
+<div class="bento-volume-stat-delta">12k este ano</div>
+</div>
+<div class="bento-volume-stat">
+<div class="bento-volume-stat-head">
+<span class="bento-volume-stat-icon bento-volume-stat-icon--accent">
+<svg fill="none" height="12" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="12"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+</span>
+<span class="bento-volume-stat-label">Ticket médio</span>
+</div>
+<div class="bento-volume-stat-v">R$ 264<span class="text-ink-400 text-[18px] font-semibold">k</span></div>
+<div class="bento-volume-stat-delta">+R$ 32k</div>
+</div>
+<div class="bento-volume-stat">
+<div class="bento-volume-stat-head">
+<span class="bento-volume-stat-icon bento-volume-stat-icon--emerald">
+<svg fill="none" height="12" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="12"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+</span>
+<span class="bento-volume-stat-label">Aprovação</span>
+</div>
+<div class="bento-volume-stat-v">87<span class="text-ink-400 text-[18px] font-semibold">%</span></div>
+<div class="bento-volume-stat-delta">acima do mercado</div>
+</div>
+</div>
+</div>
+<!-- CARD 2: QUOTE -->
+<div class="bento-card md:col-span-12 lg:col-span-5 lg:row-span-2 rounded-lg overflow-hidden relative hover:shadow-card" style="background:linear-gradient(180deg,#0a796a 0%,#053D38 100%)">
+<video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+    <source src="images/depoimento.mp4" type="video/mp4">
+  </video>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0a796a] via-[#0a796a]/75 to-[#0a796a]/30"></div>
+<div class="bento-quote-accent"></div>
+<span class="bento-quote-mark">"</span>
+<div class="relative p-8 lg:p-9 h-full min-h-[460px] flex flex-col justify-end text-white">
+<p class="text-[18px] lg:text-[20px] leading-[1.45] font-medium text-white text-balance">
+            Cortamos o tempo de fechamento de crédito de <b class="text-teal-200">28 para 4 dias</b>. Para o time comercial, é como ganhar um mês de produtividade no trimestre.
+          </p>
+<div class="mt-7 pt-5 border-t border-white/15 flex items-end justify-between gap-4">
+<div>
+<div class="text-[14px] font-bold text-white">Mariana Cavalcanti</div>
+<div class="text-[11.5px] text-white/65 mt-0.5">Diretora comercial · Bossa Nova Imóveis</div>
+</div>
+<div class="text-right shrink-0">
+<div class="text-[28px] font-bold text-teal-200 leading-none tracking-tight tabular-nums">+42%</div>
+<div class="text-[9.5px] text-white/55 uppercase tracking-[0.14em] mt-1.5">conversão</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 3: TEMPO MÉDIO -->
+<div class="bento-card bento-time md:col-span-12 lg:col-span-5 rounded-lg bg-ink-950 text-white p-8 hover:shadow-3d relative overflow-hidden">
+<div class="bento-time-glow"></div>
+<div class="relative">
+<div class="flex items-center justify-between mb-6">
+<span class="bento-eyebrow bento-eyebrow--light">Tempo médio de fechamento</span>
+<span class="text-[10px] font-bold uppercase tracking-wider text-teal-300 bg-teal-500/15 ring-1 ring-teal-500/25 px-2 py-1 rounded-md">10× + rápido</span>
+</div>
+<div class="bento-time-num">2,8<span class="bento-time-num-unit">dias</span></div>
+<div class="text-[13px] text-white/55 mt-3">do cadastro à liberação do crédito</div>
+<div class="bento-time-bars">
+<div>
+<div class="bento-time-row-head">
+<span class="text-white/50">Mercado tradicional</span>
+<span class="text-white/80 font-semibold tabular-nums">30 dias</span>
+</div>
+<div class="bento-time-row-bar">
+<div class="bento-time-row-fill bento-time-row-fill--market"></div>
+</div>
+</div>
+<div>
+<div class="bento-time-row-head">
+<span class="text-teal-300 font-semibold">Hubfi</span>
+<span class="text-teal-300 font-semibold tabular-nums">2,8 dias</span>
+</div>
+<div class="bento-time-row-bar">
+<div class="bento-time-row-fill bento-time-row-fill--hubfi"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 4: CORRETORES -->
+<div class="bento-card md:col-span-12 lg:col-span-4 rounded-lg text-white p-8 hover:shadow-teal relative overflow-hidden" style="background:linear-gradient(135deg,#0E8B7A 0%,#0A7165 60%,#08574F 100%)">
+<div class="absolute -bottom-20 -right-12 w-56 h-56 bg-white/8 rounded-full pointer-events-none"></div>
+<div class="relative">
+<div class="flex items-center justify-between mb-3">
+<span class="bento-eyebrow bento-eyebrow--white">Corretores ativos</span>
+<span class="inline-flex items-center gap-1 text-[10px] font-bold text-white bg-white/15 ring-1 ring-white/20 px-2 py-0.5 rounded">
+<svg fill="none" height="9" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24" width="9"><polyline points="6 15 12 9 18 15"></polyline></svg>
+              +38%
+            </span>
+</div>
+<div class="text-[64px] font-bold text-white leading-[0.95] tracking-[-0.035em] tabular-nums">+18,7<span class="text-white/60 text-[36px]">k</span></div>
+<div class="text-[12.5px] text-white/75 mt-2">profissionais operando todo mês</div>
+<div class="bento-brokers-photos">
+<div class="bento-brokers-photo"><img alt="Corretora" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&amp;h=120&amp;fit=crop&amp;q=70&amp;auto=format"/></div>
+<div class="bento-brokers-photo"><img alt="Corretor" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=120&amp;h=120&amp;fit=crop&amp;q=70&amp;auto=format"/></div>
+<div class="bento-brokers-photo"><img alt="Corretora" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&amp;h=120&amp;fit=crop&amp;q=70&amp;auto=format"/></div>
+<div class="bento-brokers-photo"><img alt="Corretor" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&amp;h=120&amp;fit=crop&amp;q=70&amp;auto=format"/></div>
+<div class="bento-brokers-photo"><img alt="Corretora" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&amp;h=120&amp;fit=crop&amp;q=70&amp;auto=format"/></div>
+<div class="bento-brokers-photo bento-brokers-photo--more">+18k</div>
+</div>
+<div class="mt-7 pt-5 border-t border-white/15 flex items-center justify-between text-[12px] text-white/70">
+<span>operando este mês</span>
+<span class="text-white font-bold">+38% <span class="text-white/60 font-medium"> </span></span>
+</div>
+</div>
+</div>
+<!-- CARD 5: BANCOS -->
+<div class="bento-card md:col-span-12 lg:col-span-3 rounded-lg bg-white ring-1 ring-paper-200 p-7 hover:shadow-card relative overflow-hidden">
+<span class="bento-eyebrow">Bancos integrados</span>
+<div class="bento-banks-num mt-3">10<span>+</span></div>
+<div class="text-[12.5px] text-ink-500 mt-1.5">em análise paralela</div>
+<div class="bento-banks-featured">
+<div class="bento-banks-featured-logo">Itaú</div>
+<div class="bento-banks-featured-info">
+<div class="bento-banks-featured-name">Itaú</div>
+<div class="bento-banks-featured-tag">Integração nativa</div>
+</div>
+</div>
+<div class="bento-banks-others">
+<b>Santander</b> · <b>Bradesco</b> · <b>Caixa</b> · <b>BB</b> · <b>Inter</b> · <b>+4 outros</b>
+</div>
+<div class="bento-banks-foot">
+<span class="relative flex w-1.5 h-1.5">
+<span class="absolute inset-0 rounded-full bg-emerald-500 ripple"></span>
+<span class="relative w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+</span>
+<span>conectando agora</span>
+</div>
+</div>
+</div>
+<div class="mt-10 flex flex-col sm:flex-row gap-5 items-start sm:items-center justify-between reveal">
+<div class="flex items-center gap-2.5 conectamos">
+<div class="w-9 h-9 rounded-md bg-teal-50 ring-1 ring-teal-100 flex items-center justify-center"><svg fill="none" height="18" stroke="#0E8B7A" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+<span class="text-[13.5px] font-medium text-ink-700">Conectamos quem vende imóvel com quem <b>realiza sonhos</b>.</span>
+</div>
+<a class="btn-cta-primary line" href="#cta">
+<span class="icn-wrap"><svg class="arr" fill="none" height="14" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="14"><path d="M7 17 17 7M7 7h10v10"></path></svg></span>
+        Saiba mais sobre nós
+      </a>
+</div>
+</div>
+</section>
+
+<!-- ========= FOOTER (paleta Hubfi · padrão hero · ícones dual-color) ========= -->
+<footer class="footer">
+<!-- 1. CTA Strip -->
+<div class="fo-cta-strip">
+<div class="fo-cta-inner">
+<div class="fo-cta-headline">
+        O motor que move o <em>crédito imobiliário</em> no Brasil.
+      </div>
+
+<a class="btn-cta-white" href="#cta">
+<span class="icn-wrap">
+<svg aria-hidden="true" fill="none" height="14" viewbox="0 0 24 24" width="14">
+<path d="M5 12h14" stroke="#FFF" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M13 5l7 7-7 7" stroke="#7CCBB9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</span>
+        Agendar demonstração
+      </a>
+</div>
+</div>
+<!-- 2. Body -->
+<div class="fo-body">
+<div class="fo-body-inner">
+<nav aria-label="Navegação principal" class="fo-col">
+<h3 class="fo-col-title">Navegue</h3>
+<ul class="fo-links">
+<li><a class="fo-link" href="#produtos">Soluções</a></li>
+<li><a class="fo-link" href="#para-quem">Para quem</a></li>
+<li><a class="fo-link" href="#">Planos</a></li>
+<li><a class="fo-link" href="#">Cases</a></li>
+<li><a class="fo-link" href="#">Blog</a></li>
+</ul>
+
+</nav>
+<nav aria-label="Plataforma" class="fo-col">
+<h3 class="fo-col-title">Plataforma</h3>
+<ul class="fo-links">
+<li><a class="fo-link" href="#">Imobiliárias</a></li>
+<li><a class="fo-link" href="#">Assessorias financeiras</a></li>
+<li><a class="fo-link" href="#">Consultorias financeiras</a></li>
+<li><a class="fo-link" href="#">Hubfi Copilot</a></li>
+<li><a class="fo-link" href="#">Integrações</a></li>
+<li><a class="fo-link" href="#">API &amp; desenvolvedores</a></li>
+</ul>
+</nav>
+<nav aria-label="Empresa" class="fo-col">
+<h3 class="fo-col-title">Empresa</h3>
+<ul class="fo-links">
+<li><a class="fo-link" href="#">Sobre nós</a></li>
+<li><a class="fo-link" href="#">Carreira</a></li>
+<li><a class="fo-link" href="#">Imprensa</a></li>
+<li><a class="fo-link" href="#">Termos de uso</a></li>
+<li><a class="fo-link" href="#">Política de privacidade</a></li>
+<li><a class="fo-link" href="#">LGPD</a></li>
+</ul>
+</nav>
+<div class="fo-contact">
+<div class="fo-contact-head">
+<span class="fo-contact-title">Contato</span>
+<span class="fo-contact-status">
+<span class="fo-contact-status-dot"></span>
+            Online agora
+          </span>
+</div>
+<a class="fo-contact-phone" href="https://wa.me/553532928398">
+<span class="fo-contact-phone-num">(35) 3292-8398</span>
+<span aria-label="WhatsApp" class="fo-contact-phone-wa">
+<svg aria-hidden="true" fill="#FFF" height="18" viewbox="0 0 24 24" width="18">
+<path d="M20.52 3.48A11.94 11.94 0 0 0 12.05 0a12 12 0 0 0-10.4 17.93L0 24l6.22-1.63a12 12 0 0 0 5.83 1.49h.01A12 12 0 0 0 24 12.04a11.94 11.94 0 0 0-3.48-8.56zM12.05 21.91h-.01a9.93 9.93 0 0 1-5.06-1.39l-.36-.21-3.69.97.99-3.6-.24-.37A9.93 9.93 0 1 1 12.05 21.9zm5.45-7.43c-.3-.15-1.76-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"></path>
+</svg>
+</span>
+</a>
+<a class="fo-contact-email" href="mailto:contato@hubfi.com.br">
+<svg aria-hidden="true" fill="none" height="14" viewbox="0 0 24 24" width="14">
+<rect height="14" rx="2" stroke="#7CCBB9" stroke-width="1.7" width="18" x="3" y="5"></rect>
+<path d="m3 7 9 6 9-6" stroke="#AEDFD3" stroke-linecap="round" stroke-width="1.7"></path>
+</svg>
+          contato@hubfi.com.br
+        </a>
+<div class="fo-contact-spacer"></div>
+<div class="fo-contact-links">
+<a class="fo-contact-link" href="#">
+<span class="fo-contact-link-icon">
+<svg aria-hidden="true" fill="none" height="22" viewbox="0 0 24 24" width="22">
+<circle cx="12" cy="12" r="9" stroke="#7CCBB9" stroke-width="1.7"></circle>
+<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" stroke="#7CCBB9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path>
+<circle cx="12" cy="17.5" fill="#AEDFD3" r="1.4"></circle>
+</svg>
+</span>
+<span class="fo-contact-link-text">
+<span class="fo-contact-link-label">Central de ajuda</span>
+<span class="fo-contact-link-meta">FAQ e tutoriais</span>
+</span>
+<svg aria-hidden="true" class="fo-contact-link-arrow" fill="none" height="14" viewbox="0 0 24 24" width="14">
+<path d="M5 12h14" stroke="#7CCBB9" stroke-linecap="round" stroke-width="2.2"></path>
+<path d="M13 5l7 7-7 7" stroke="#AEDFD3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
+</svg>
+</a>
+<a class="fo-contact-link" href="#">
+<span class="fo-contact-link-icon">
+<svg aria-hidden="true" fill="none" height="22" viewbox="0 0 24 24" width="22">
+<path d="M3 18v-5a9 9 0 0 1 18 0v5" stroke="#7CCBB9" stroke-linecap="round" stroke-width="1.7"></path>
+<path d="M21 19a2 2 0 0 1-2 2h-1v-6h3v4zM3 19a2 2 0 0 0 2 2h1v-6H3v4z" stroke="#7CCBB9" stroke-linejoin="round" stroke-width="1.7"></path>
+<circle cx="6" cy="18" fill="#AEDFD3" r="1.4"></circle>
+</svg>
+</span>
+<span class="fo-contact-link-text">
+<span class="fo-contact-link-label">Falar conosco</span>
+<span class="fo-contact-link-meta">Time de vendas</span>
+</span>
+<svg aria-hidden="true" class="fo-contact-link-arrow" fill="none" height="14" viewbox="0 0 24 24" width="14">
+<path d="M5 12h14" stroke="#7CCBB9" stroke-linecap="round" stroke-width="2.2"></path>
+<path d="M13 5l7 7-7 7" stroke="#AEDFD3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
+</svg>
+</a>
+</div>
+<div class="fo-contact-hours">
+<span class="fo-contact-hours-icon">
+<svg aria-hidden="true" fill="none" height="18" viewbox="0 0 24 24" width="18">
+<circle cx="12" cy="12" r="9" stroke="#7CCBB9" stroke-width="1.7"></circle>
+<path d="M12 7v5l3 2" stroke="#7CCBB9" stroke-linecap="round" stroke-width="1.7"></path>
+<circle cx="12" cy="12" fill="#AEDFD3" r="1.4"></circle>
+</svg>
+</span>
+<div class="fo-contact-hours-text">
+<b>Seg a sex</b>· 9h às 18h
+          </div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Bottom -->
+<div class="fo-bottom">
+<div class="fo-bottom-inner">
+<div>
+<div class="fo-brand">
+<img src="images/hubfi-dark.png" id="logo">
+</div>
+<p class="fo-about-text">
+          A Hubfi é a plataforma B2B de soluções financeiras que conecta imobiliárias, assessorias e consultorias a +70 instituições. Mais de 150 produtos integrados  crédito, seguros, energia e investimentos  operados por especialistas do início ao fim.
+        </p>
+<div class="fo-trust">
+<span class="fo-trust-badge">
+<svg aria-hidden="true" fill="none" height="13" viewbox="0 0 24 24" width="13">
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#7CCBB9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+<path d="m9 12 2 2 4-4" stroke="#AEDFD3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+            LGPD
+          </span>
+<span class="fo-trust-badge">
+<svg aria-hidden="true" fill="none" height="13" viewbox="0 0 24 24" width="13">
+<rect height="11" rx="2" stroke="#7CCBB9" stroke-width="1.8" width="18" x="3" y="11"></rect>
+<path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#7CCBB9" stroke-width="1.8"></path>
+<circle cx="12" cy="16" fill="#AEDFD3" r="1.4"></circle>
+</svg>
+            ISO 27001
+          </span>
+<span class="fo-trust-badge">
+<svg aria-hidden="true" fill="none" height="13" viewbox="0 0 24 24" width="13">
+<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="#7CCBB9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+<polyline points="22 4 12 14.01 9 11.01" stroke="#AEDFD3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
+</svg>
+            BACEN
+          </span>
+</div>
+</div>
+<div class="fo-social-block">
+<div class="fo-social-title">Acompanhe a Hubfi</div>
+<div class="fo-social">
+<a aria-label="Instagram" class="fo-social-btn" href="https://instagram.com/hubfi_" rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="none" height="18" viewbox="0 0 24 24" width="18">
+<rect data-stroke="" height="18" rx="5" stroke="#7CCBB9" stroke-width="1.8" width="18" x="3" y="3"></rect>
+<circle cx="12" cy="12" data-stroke="" r="4" stroke="#7CCBB9" stroke-width="1.8"></circle>
+<circle cx="17.5" cy="6.5" data-fill="" fill="#AEDFD3" r="1"></circle>
+</svg>
+</a>
+<a aria-label="LinkedIn" class="fo-social-btn" href="#" rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="none" height="18" viewbox="0 0 24 24" width="18">
+<rect data-stroke="" height="18" rx="2.5" stroke="#7CCBB9" stroke-width="1.8" width="18" x="3" y="3"></rect>
+<rect data-fill="" fill="#7CCBB9" height="8" rx=".4" width="2.6" x="6" y="10"></rect>
+<circle cx="7.3" cy="7" data-fill="" fill="#AEDFD3" r="1.5"></circle>
+<path d="M10.5 18v-8h2.5v1.2c.4-.7 1.2-1.4 2.5-1.4 2.6 0 3.1 1.7 3.1 4V18h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2V18h-2.5z" data-fill="" fill="#7CCBB9"></path>
+</svg>
+</a>
+<a aria-label="YouTube" class="fo-social-btn" href="#" rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="none" height="18" viewbox="0 0 24 24" width="18">
+<rect data-stroke="" height="14" rx="3" stroke="#7CCBB9" stroke-width="1.8" width="20" x="2" y="5"></rect>
+<path d="M10 9.3v5.4l4.7-2.7L10 9.3z" data-fill="" fill="#AEDFD3"></path>
+</svg>
+</a>
+<a aria-label="Facebook" class="fo-social-btn" href="#" rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="none" height="18" viewbox="0 0 24 24" width="18">
+<circle cx="12" cy="12" data-stroke="" r="9" stroke="#7CCBB9" stroke-width="1.8"></circle>
+<path d="M13.5 21V13.5h2.3l.4-2.7h-2.7V9.3c0-.8.2-1.3 1.4-1.3h1.5V5.6c-.7-.1-1.5-.2-2.4-.2-2.3 0-3.9 1.4-3.9 4v2.4H8v2.7h2.1V21h3.4z" data-fill="" fill="#AEDFD3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. Copyright -->
+<div class="fo-copy">
+<div class="fo-copy-inner">
+<div class="fo-copy-text">
+<b>Hubfi</b> 2026 · Todos os direitos reservados
+      </div>
+<button class="fo-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" type="button">
+        Voltar ao topo
+        <span class="fo-back-top-arrow">
+<svg aria-hidden="true" fill="none" height="13" viewbox="0 0 24 24" width="13">
+<path d="M12 19V5" stroke="#022B27" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M5 12l7-7 7 7" stroke="#08574F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</span>
+</button>
+<div class="fo-copy-design">
+        Feito com cuidado por <b>Hubfi Design</b>
+</div>
+</div>
+</div>
+</footer>
+<script>
+const items = document.querySelectorAll('.reveal, .reveal-stagger, .bento-grid, .bridge, .dinheiro-mesa');
+const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && (e.target.classList.add('in'), io.unobserve(e.target))), { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+items.forEach(i => io.observe(i));
+
+document.querySelectorAll('.tab-card').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (btn.dataset.active === 'true') return;
+    const target = btn.dataset.tab;
+    document.querySelectorAll('.tab-card').forEach(b => b.dataset.active = b.dataset.tab === target ? 'true' : 'false');
+    document.querySelectorAll('.tab-pane').forEach(p => {
+      const a = p.dataset.pane === target;
+      p.dataset.active = a ? 'true' : 'false';
+      if (a) { p.style.animation = 'none'; p.offsetHeight; p.style.animation = '';
+        const m = p.querySelector('.tab-mockup'); if (m) { m.style.animation = 'none'; m.offsetHeight; m.style.animation = ''; } }
+    });
+  });
+});
+
+(function(){
+  const heroMockup = document.getElementById('heroMockup');
+  if (!heroMockup) return;
+  const heroMsgs = heroMockup.querySelectorAll('.hero-msg[data-step]');
+  const cursor = heroMockup.querySelector('[data-hero-cursor]');
+  const wapip = heroMockup.querySelector('[data-hero-wapip]');
+  const wabubble = heroMockup.querySelector('[data-hero-wabubble]');
+  const wachecks = heroMockup.querySelector('[data-hero-wachecks]');
+  const toast = heroMockup.querySelector('[data-hero-toast]');
+  const resendItem = heroMockup.querySelector('[data-hero-resend]');
+  const notifyBtn = heroMockup.querySelector('[data-hero-notify-btn]');
+
+  const wait = (ms) => new Promise(r => setTimeout(r, ms));
+  let cancel = false;
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function resetAll(){
+    heroMsgs.forEach(m => m.classList.remove('show'));
+    [cursor, wapip, wabubble, toast].forEach(el => el && el.classList.remove('is-visible'));
+    if (wachecks) wachecks.classList.remove('is-read');
+    if (resendItem) resendItem.classList.remove('is-hover','is-active');
+    if (notifyBtn) notifyBtn.classList.remove('is-pressed');
+    if (cursor) cursor.classList.remove('is-clicking');
+  }
+
+  async function playHero(){
+    cancel = false;
+    resetAll();
+
+    if (reduce){
+      heroMsgs.forEach(m => m.classList.add('show'));
+      await wait(8000);
+      return;
+    }
+
+    // Mensagens entram em sequência
+    await wait(600); if (cancel) return;
+    heroMsgs[0]?.classList.add('show');
+    await wait(700); if (cancel) return;
+    heroMsgs[1]?.classList.add('show');
+    await wait(700); if (cancel) return;
+    heroMsgs[2]?.classList.add('show');
+
+    // Pausa pra absorver "Pra fazer agora"
+    await wait(2200); if (cancel) return;
+
+    // ===== Cena 6: cursor clica no item Reenviar =====
+    if (resendItem && cursor && wapip && toast){
+      const mockRect = heroMockup.getBoundingClientRect();
+      // Cursor mira no botão "Notificar" se existir, fallback pro item
+      const targetEl = notifyBtn || resendItem;
+      const itemRect = targetEl.getBoundingClientRect();
+      const targetX = itemRect.left - mockRect.left + itemRect.width * 0.5;
+      const targetY = itemRect.top - mockRect.top + itemRect.height * 0.5;
+
+      // Posição inicial sem transition (evita voar de posição anterior)
+      cursor.style.transition = 'none';
+      cursor.style.transform = `translate(80px, ${mockRect.height - 90}px)`;
+      void cursor.offsetWidth; // reflow
+      cursor.style.transition = '';
+      cursor.classList.add('is-visible');
+      await wait(80); if (cancel) return;
+      cursor.style.transform = `translate(${targetX}px, ${targetY}px)`;
+      await wait(820); if (cancel) return;
+      resendItem.classList.add('is-hover');
+      await wait(450); if (cancel) return;
+
+      // Click + ativa item + WhatsApp PiP slide-in
+      cursor.classList.add('is-clicking');
+      resendItem.classList.add('is-active');
+      if (notifyBtn) notifyBtn.classList.add('is-pressed');
+      wapip.classList.add('is-visible');
+      await wait(280); if (cancel) return;
+      cursor.classList.remove('is-clicking');
+      await wait(540); if (cancel) return;
+
+      // Bubble aparece
+      wabubble.classList.add('is-visible');
+      await wait(900); if (cancel) return;
+      // Double-check vira azul
+      wachecks.classList.add('is-read');
+      await wait(320); if (cancel) return;
+
+      // Modal de sucesso
+      toast.classList.add('is-visible');
+      await wait(2400); if (cancel) return;
+
+      // Saída
+      toast.classList.remove('is-visible');
+      await wait(280); if (cancel) return;
+      wapip.classList.remove('is-visible');
+      cursor.classList.remove('is-visible');
+      await wait(700);
+    }
+
+    // Hold antes de reiniciar
+    await wait(1800);
+  }
+
+  let running = false;
+  async function loop(){
+    if (running) return;
+    running = true;
+    while(!cancel){
+      await playHero();
+      if (cancel) break;
+    }
+    running = false;
+  }
+
+  const heroIO = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting){ cancel = false; loop(); }
+    else { cancel = true; }
+  }), { threshold: 0.2 });
+  heroIO.observe(heroMockup);
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) cancel = true;
+    else if (!running) { cancel = false; loop(); }
+  });
+})();
+
+const phoneBlock = document.getElementById('phoneBlock');
+const waMsgs = phoneBlock ? phoneBlock.querySelectorAll('.hero-msg[data-wstep]') : [];
+const waTyping = document.getElementById('waTyping');
+function playWa() {
+  waMsgs.forEach(m => { m.classList.remove('show'); m.style.display = ''; });
+  setTimeout(() => waMsgs[0]?.classList.add('show'), 400);
+  setTimeout(() => waMsgs[1]?.classList.add('show'), 1300);
+  setTimeout(() => { if (waTyping) waTyping.style.display = 'none'; waMsgs[2]?.classList.add('show'); }, 2700);
+  setTimeout(() => waMsgs[3]?.classList.add('show'), 3700);
+  setTimeout(() => waMsgs[4]?.classList.add('show'), 4900);
+}
+let waLoop = null;
+const waIO = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { playWa(); if (waLoop) clearInterval(waLoop); waLoop = setInterval(playWa, 10000); } else { if (waLoop) { clearInterval(waLoop); waLoop = null; } } }), { threshold: 0.25 });
+if (phoneBlock) waIO.observe(phoneBlock);
+
+
+// ============================================================
+// MOCKUP  Loop de abertura de operação Fast Itaú (aba financiamento)
+// ============================================================
+(function(){
+  const root = document.querySelector('[data-op-mockup]');
+  if (!root) return;
+
+  const $$ = (sel, ctx=root) => Array.from(ctx.querySelectorAll(sel));
+  const steps = $$('[data-step]');
+  const lines = $$('[data-line]');
+  const panes = $$('[data-pane]');
+
+  // Helper de typewriter (preenche span#text com data-text caractere a caractere)
+  function typewrite(input, durationMs){
+    const txt = input.querySelector('.op-input-text');
+    const target = txt.dataset.text || '';
+    input.classList.add('is-focused','is-typing');
+    txt.textContent = '';
+    return new Promise(resolve=>{
+      const total = Math.max(target.length, 1);
+      const tick = Math.max(durationMs / total, 18);
+      let i = 0;
+      const id = setInterval(()=>{
+        i++;
+        txt.textContent = target.slice(0, i);
+        if (i >= target.length){
+          clearInterval(id);
+          input.classList.remove('is-typing');
+          // mantém is-focused enquanto o pane está ativo
+          resolve();
+        }
+      }, tick);
+    });
+  }
+
+  function clearInputs(){
+    $$('.op-input').forEach(i=>{
+      i.classList.remove('is-focused','is-typing');
+      const t = i.querySelector('.op-input-text');
+      if (t && t.dataset.text) t.textContent = '';
+    });
+  }
+
+  function setStep(activeIndex){
+    // Steps
+    steps.forEach((el, idx)=>{
+      el.classList.remove('is-current','is-done');
+      if (idx < activeIndex) el.classList.add('is-done');
+      else if (idx === activeIndex) el.classList.add('is-current');
+    });
+    // Lines (entre step idx e idx+1)  done quando idx < activeIndex
+    lines.forEach((el, idx)=>{
+      el.classList.toggle('is-done', idx < activeIndex);
+    });
+    // Panes
+    panes.forEach((el, idx)=>{
+      el.classList.toggle('is-active', idx === activeIndex);
+    });
+  }
+
+  // Sleep helper
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+
+  let cancel = false;
+
+  async function runCycle(){
+    cancel = false;
+    // Reset visual
+    clearInputs();
+    $$('.op-product-chip').forEach(c=>c.classList.remove('is-selected'));
+    $$('.op-comm-card').forEach(c=>c.classList.remove('is-selected'));
+    $$('.op-client-card').forEach(c=>c.classList.remove('is-revealed'));
+    $$('.op-loading-bar').forEach(c=>c.classList.remove('is-loading'));
+
+    // ===== STEP 1: Cliente =====
+    if (cancel) return;
+    setStep(0);
+    await wait(450);
+    const cliInput = root.querySelector('[data-input="cliente"]');
+    await typewrite(cliInput, 900);
+    if (cancel) return;
+    await wait(180);
+    root.querySelector('[data-client-card]').classList.add('is-revealed');
+    await wait(900);
+
+    // ===== STEP 2: Produto =====
+    if (cancel) return;
+    setStep(1);
+    await wait(700);
+    root.querySelector('[data-product="financ"]').classList.add('is-selected');
+    await wait(1100);
+
+    // ===== STEP 3: Simulação =====
+    if (cancel) return;
+    setStep(2);
+    await wait(450);
+    const valor = root.querySelector('[data-input="valor"]');
+    const entrada = root.querySelector('[data-input="entrada"]');
+    await typewrite(valor, 850);
+    await wait(180);
+    await typewrite(entrada, 850);
+    await wait(380);
+    if (cancel) return;
+    const lb = root.querySelector('[data-loading]');
+    lb.classList.add('is-loading');
+    // re-trigger animation if já existia
+    const fill = lb.querySelector('.op-loading-fill');
+    fill.style.animation = 'none'; void fill.offsetWidth;
+    fill.style.animation = '';
+    await wait(1700);
+
+    // ===== STEP 4: Comunicação =====
+    if (cancel) return;
+    setStep(3);
+    await wait(750);
+    root.querySelector('[data-comm="hubfi"]').classList.add('is-selected');
+    await wait(1200);
+
+    // ===== STEP 5: Sucesso =====
+    if (cancel) return;
+    setStep(4);
+    await wait(3800);
+  }
+
+  let running = false;
+  async function loop(){
+    if (running) return;
+    running = true;
+    while(!cancel){
+      await runCycle();
+      if (cancel) break;
+    }
+    running = false;
+  }
+
+  // Pausa quando fora da viewport
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if (e.isIntersecting){
+        cancel = false;
+        loop();
+      } else {
+        cancel = true;
+      }
+    });
+  }, { threshold: 0.25 });
+
+  // Pausa também quando a aba fica oculta
+  document.addEventListener('visibilitychange', ()=>{
+    if (document.hidden){ cancel = true; }
+    else if (root.getBoundingClientRect().top < window.innerHeight){ cancel = false; loop(); }
+  });
+
+  // Inicia observando
+  io.observe(root);
+
+  // Estado inicial visual (step 1 current, panes 1 active)
+  setStep(0);
+})();
+
+
+// ============================================================
+// MOTIONS  Marketplace, Portabilidade & Realtime
+// ============================================================
+(function(){
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const wait = (ms) => new Promise(r => setTimeout(r, ms));
+
+  // ---------- Helpers ----------
+  function easeOutCubic(t){ return 1 - Math.pow(1 - t, 3); }
+
+  function formatNumber(n, format){
+    n = Math.round(n);
+    if (format === 'br-int') return n.toLocaleString('pt-BR');
+    if (format === 'brl' || format === 'brl-abs'){
+      const abs = format === 'brl-abs' ? Math.abs(n) : n;
+      return abs.toLocaleString('pt-BR');
+    }
+    return String(n);
+  }
+
+  function animateCounter(el, duration = 1400){
+    if (el.dataset.counterDone === '1') return;
+    const to = parseFloat(el.dataset.counterTo);
+    const prefix = el.dataset.counterPrefix || '';
+    const suffix = el.dataset.counterSuffix || '';
+    const format = el.dataset.counterFormat || '';
+    if (isNaN(to)) return;
+
+    if (reduce){
+      el.textContent = prefix + formatNumber(to, format) + suffix;
+      el.dataset.counterDone = '1';
+      return;
+    }
+
+    el.dataset.counterDone = '1';
+    const start = performance.now();
+    function tick(now){
+      const t = Math.min(1, (now - start) / duration);
+      const v = to * easeOutCubic(t);
+      el.textContent = prefix + formatNumber(v, format) + suffix;
+      if (t < 1) requestAnimationFrame(tick);
+      else el.textContent = prefix + formatNumber(to, format) + suffix;
+    }
+    requestAnimationFrame(tick);
+  }
+
+  // Cursor: move pra um elemento alvo dentro de um container relative
+  async function cursorMoveTo(cursor, container, target, opts={}){
+    if (!cursor || !container || !target) return;
+    const containerRect = container.getBoundingClientRect();
+    const targetRect = target.getBoundingClientRect();
+    const offsetX = opts.offsetX !== undefined ? opts.offsetX : 0.5;
+    const offsetY = opts.offsetY !== undefined ? opts.offsetY : 0.5;
+    const x = targetRect.left - containerRect.left + targetRect.width * offsetX;
+    const y = targetRect.top - containerRect.top + targetRect.height * offsetY;
+    cursor.style.transform = `translate(${x}px, ${y}px)`;
+  }
+
+  function cursorReset(cursor, container, x, y){
+    if (!cursor) return;
+    cursor.style.transition = 'none';
+    cursor.style.transform = `translate(${x}px, ${y}px)`;
+    void cursor.offsetWidth;
+    cursor.style.transition = '';
+  }
+
+  async function cursorClick(cursor){
+    if (!cursor) return;
+    cursor.classList.add('is-clicking');
+    await wait(280);
+    cursor.classList.remove('is-clicking');
+  }
+
+  // ---------- Marketplace loop ----------
+  (function(){
+    const root = document.querySelector('[data-mkt-mockup]');
+    if (!root) return;
+    const cursor = root.querySelector('[data-mkt-cursor]');
+    const inner = root.querySelector('.rounded-lg.bg-white');
+    const cards = Array.from(root.querySelectorAll('[data-mkt-card]'));
+    const bars = Array.from(root.querySelectorAll('[data-mkt-bar]'));
+    const counters = Array.from(root.querySelectorAll('[data-counter-to]'));
+    const cta = root.querySelector('[data-mkt-cta]');
+    let cancel = false;
+    let running = false;
+
+    async function fillBars(){
+      bars.forEach(b => {
+        b.style.width = b.dataset.mktBar + '%';
+      });
+    }
+
+    async function runCycle(){
+      if (cancel) return;
+      // Reset visual
+      cards.forEach(c => c.classList.remove('is-hover'));
+      counters.forEach(c => { c.dataset.counterDone = ''; c.textContent = (c.dataset.counterPrefix || '') + '0' + (c.dataset.counterSuffix || ''); });
+      bars.forEach(b => { b.style.width = '0%'; });
+      if (cta) cta.classList.remove('is-pulse');
+      if (cursor) cursor.classList.remove('is-visible','is-clicking');
+
+      await wait(400); if (cancel) return;
+      counters.forEach(c => animateCounter(c, 1100));
+      await wait(120);
+      fillBars();
+      await wait(1300); if (cancel) return;
+
+      if (reduce){ await wait(4000); return; }
+
+      // Cursor entra do canto inferior-esquerdo
+      const innerRect = inner.getBoundingClientRect();
+      cursorReset(cursor, inner, 30, innerRect.height - 40);
+      cursor.classList.add('is-visible');
+      await wait(80); if (cancel) return;
+
+      // Hover sequencial nos 3 cards (Porto, Bradesco, Itaú)
+      for (const card of cards){
+        if (cancel) return;
+        await cursorMoveTo(cursor, inner, card, { offsetX: 0.55, offsetY: 0.4 });
+        await wait(620); if (cancel) return;
+        card.classList.add('is-hover');
+        await wait(520); if (cancel) return;
+        card.classList.remove('is-hover');
+        await wait(140);
+      }
+
+      // Cursor vai pro CTA "Adquirir top"
+      if (cta){
+        await cursorMoveTo(cursor, inner, cta, { offsetX: 0.5, offsetY: 0.5 });
+        await wait(550); if (cancel) return;
+        cursorClick(cursor);
+        cta.classList.add('is-pulse');
+        await wait(700); if (cancel) return;
+      }
+
+      cursor.classList.remove('is-visible');
+      await wait(1500);
+    }
+
+    async function loop(){
+      if (running) return;
+      running = true;
+      while(!cancel){
+        await runCycle();
+        if (cancel) break;
+      }
+      running = false;
+    }
+
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting){
+        // só roda se a aba do consórcio estiver ativa OU se for visível
+        const pane = root.closest('.tab-pane');
+        if (pane && pane.getAttribute('data-active') !== 'true' && getComputedStyle(pane).display === 'none') return;
+        cancel = false; loop();
+      } else { cancel = true; }
+    }), { threshold: 0.25 });
+    io.observe(root);
+
+    // Reagir à troca de aba (quando o pane do consórcio fica ativo, dispara cycle)
+    const pane = root.closest('.tab-pane');
+    if (pane){
+      const mo = new MutationObserver(() => {
+        if (pane.getAttribute('data-active') === 'true'){
+          cancel = false; loop();
+        } else {
+          cancel = true;
+        }
+      });
+      mo.observe(pane, { attributes: true, attributeFilter: ['data-active'] });
+    }
+  })();
+
+  // ---------- Portabilidade loop ----------
+  (function(){
+    const root = document.querySelector('[data-port-mockup]');
+    if (!root) return;
+    const cursor = root.querySelector('[data-port-cursor]');
+    const inner = root.querySelector('.rounded-lg.bg-white');
+    const afterCard = root.querySelector('[data-port-after]');
+    const counters = Array.from(root.querySelectorAll('[data-counter-to]'));
+    const chartLine = root.querySelector('.port-chart-line');
+    const chartFill = root.querySelector('.port-chart-fill');
+    const chartDot = root.querySelector('.port-chart-dot');
+    let cancel = false;
+    let running = false;
+
+    // Setup do path desenhar
+    let lineLen = 0;
+    if (chartLine){
+      try { lineLen = chartLine.getTotalLength(); }
+      catch(e){ lineLen = 250; }
+      chartLine.style.strokeDasharray = lineLen;
+      chartLine.style.strokeDashoffset = lineLen;
+      chartLine.style.transition = 'stroke-dashoffset 1.4s cubic-bezier(.45,.0,.15,1)';
+      if (chartFill){ chartFill.style.opacity = '0'; chartFill.style.transition = 'opacity .8s ease'; }
+      if (chartDot){ chartDot.style.opacity = '0'; chartDot.style.transition = 'opacity .4s ease'; chartDot.style.transitionDelay = '1.2s'; }
+    }
+
+    async function runCycle(){
+      if (cancel) return;
+      // Reset
+      counters.forEach(c => { c.dataset.counterDone = ''; c.textContent = (c.dataset.counterPrefix || '') + '0' + (c.dataset.counterSuffix || ''); });
+      if (chartLine){ chartLine.style.strokeDashoffset = lineLen; }
+      if (chartFill){ chartFill.style.opacity = '0'; }
+      if (chartDot){ chartDot.style.opacity = '0'; }
+      if (afterCard) afterCard.classList.remove('is-pulse');
+      if (cursor) cursor.classList.remove('is-visible','is-clicking');
+
+      await wait(400); if (cancel) return;
+      counters.forEach(c => animateCounter(c, 1100));
+
+      // Path desenha (com pequeno delay)
+      await wait(220); if (cancel) return;
+      if (chartLine){ chartLine.style.strokeDashoffset = '0'; }
+      if (chartFill){ chartFill.style.opacity = '0.18'; }
+      if (chartDot){ chartDot.style.opacity = '1'; }
+
+      await wait(700); if (cancel) return;
+      if (reduce){ await wait(1000); return; }
+
+      // Cursor entra e vai pro card "Após portar"
+      if (cursor && afterCard){
+        const innerRect = inner.getBoundingClientRect();
+        cursorReset(cursor, inner, 40, innerRect.height - 50);
+        cursor.classList.add('is-visible');
+        await wait(80); if (cancel) return;
+        await cursorMoveTo(cursor, inner, afterCard, { offsetX: 0.5, offsetY: 0.35 });
+        await wait(720); if (cancel) return;
+        cursorClick(cursor);
+        afterCard.classList.add('is-pulse');
+        await wait(900); if (cancel) return;
+        afterCard.classList.remove('is-pulse');
+        cursor.classList.remove('is-visible');
+      }
+
+      await wait(800);
+    }
+
+    async function loop(){
+      if (running) return;
+      running = true;
+      while(!cancel){
+        await runCycle();
+        if (cancel) break;
+      }
+      running = false;
+    }
+
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting){
+        const pane = root.closest('.tab-pane');
+        if (pane && pane.getAttribute('data-active') !== 'true' && getComputedStyle(pane).display === 'none') return;
+        cancel = false; loop();
+      } else { cancel = true; }
+    }), { threshold: 0.25 });
+    io.observe(root);
+
+    const pane = root.closest('.tab-pane');
+    if (pane){
+      const mo = new MutationObserver(() => {
+        if (pane.getAttribute('data-active') === 'true'){
+          cancel = false; loop();
+        } else { cancel = true; }
+      });
+      mo.observe(pane, { attributes: true, attributeFilter: ['data-active'] });
+    }
+  })();
+
+  // ---------- Realtime stat cards (count-up + cursor) ----------
+  (function(){
+    const grid = document.querySelector('[data-rt-grid]');
+    if (!grid) return;
+    const cards = Array.from(grid.querySelectorAll('[data-rt-card]'));
+    const counters = Array.from(grid.querySelectorAll('[data-counter-to]'));
+    const cursor = grid.querySelector('[data-rt-cursor]');
+    let cancel = false;
+    let running = false;
+    let counterFired = false;
+
+    // Counter dispara só uma vez quando entra na viewport
+    const counterIO = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting && !counterFired){
+        counterFired = true;
+        counters.forEach((c, i) => setTimeout(() => animateCounter(c, 1600), i * 120));
+      }
+    }), { threshold: 0.4 });
+    counterIO.observe(grid);
+
+    // Cursor loop fica em ciclo enquanto a seção está visível
+    async function runCursorCycle(){
+      if (!cursor || cards.length === 0 || reduce) { await wait(8000); return; }
+      cards.forEach(c => c.classList.remove('is-hover'));
+
+      // Cursor entra do canto inferior esquerdo do grid
+      const gridRect = grid.getBoundingClientRect();
+      cursorReset(cursor, grid, 40, gridRect.height - 30);
+      cursor.classList.add('is-visible');
+      await wait(120); if (cancel) return;
+
+      for (const card of cards){
+        if (cancel) return;
+        await cursorMoveTo(cursor, grid, card, { offsetX: 0.5, offsetY: 0.35 });
+        await wait(680); if (cancel) return;
+        card.classList.add('is-hover');
+        await wait(700); if (cancel) return;
+        card.classList.remove('is-hover');
+        await wait(180);
+      }
+
+      cursor.classList.remove('is-visible');
+      await wait(800);
+    }
+
+    async function loop(){
+      if (running) return;
+      running = true;
+      while(!cancel){
+        await runCursorCycle();
+        if (cancel) break;
+      }
+      running = false;
+    }
+
+    const cursorIO = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting){
+        cancel = false;
+        // Espera o counter rodar antes de iniciar o cursor
+        setTimeout(() => { if (!cancel) loop(); }, 1300);
+      } else { cancel = true; }
+    }), { threshold: 0.25 });
+    cursorIO.observe(grid);
+  })();
+
+})();
+
+
+
+//LOGO MEIO FICAR COM COR
+
+const logos = document.querySelectorAll('.bank-logo');
+
+function updateActiveLogo() {
+  const centerX = window.innerWidth / 2;
+
+  let closest = null;
+  let closestDistance = Infinity;
+
+  logos.forEach(logo => {
+    const rect = logo.getBoundingClientRect();
+    const logoCenter = rect.left + rect.width / 2;
+    const distance = Math.abs(centerX - logoCenter);
+
+    if (distance < closestDistance) {
+      closestDistance = distance;
+      closest = logo;
+    }
+  });
+
+  logos.forEach(l => l.classList.remove('is-active'));
+  if (closest) closest.classList.add('is-active');
+}
+
+// roda continuamente (leve o suficiente)
+setInterval(updateActiveLogo, 100);
+
+
+</script>
+
+
+
+
+
+
+<!------ DINHEIRO NA MESA ----->
+
+<script>
+(function(){
+  const section = document.querySelector('.dinheiro-mesa');
+  if (!section) return;
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  io.observe(section);
+
+  // ── Simulador ──
+  const inputClientes = section.querySelector('[data-input-clientes]');
+  const inputTicket = section.querySelector('[data-input-ticket]');
+  const outClientes = section.querySelector('[data-out-clientes]');
+  const outTicket = section.querySelector('[data-out-ticket]');
+  const outMonth = section.querySelector('[data-out-month]');
+  const outYear = section.querySelector('[data-out-year]');
+  const calcClientes = section.querySelector('[data-calc-clientes]');
+  const calcTicket = section.querySelector('[data-calc-ticket]');
+
+  function formatTicket(value) {
+    // Format R$ XXk or R$ X,YM
+    if (value >= 1000000) {
+      const m = (value / 1000000).toFixed(1).replace('.', ',');
+      return `R$ ${m}M`;
+    }
+    return `R$ ${Math.round(value / 1000)}k`;
+  }
+
+  function formatBRL(value) {
+    return Math.round(value).toLocaleString('pt-BR');
+  }
+
+  function updateSliderTrack(input) {
+    const min = parseFloat(input.min);
+    const max = parseFloat(input.max);
+    const val = parseFloat(input.value);
+    const pct = ((val - min) / (max - min)) * 100;
+    input.style.setProperty('--progress', pct + '%');
+  }
+
+  function pulseValue(el) {
+    el.classList.remove('is-pulse');
+    void el.offsetWidth; // force reflow
+    el.classList.add('is-pulse');
+  }
+
+  function update() {
+    const clientes = parseInt(inputClientes.value);
+    const ticket = parseInt(inputTicket.value);
+
+    // Update displays
+    outClientes.textContent = clientes;
+    outTicket.textContent = formatTicket(ticket);
+    calcClientes.textContent = clientes;
+    calcTicket.textContent = formatTicket(ticket);
+
+    // Calculate: clientes × ticket × 1%
+    const perMonth = clientes * ticket * 0.01;
+    const perYear = perMonth * 12;
+
+    outMonth.textContent = 'R$ ' + formatBRL(perMonth);
+    outYear.textContent = formatBRL(perYear);
+
+    // Update slider visual tracks (for webkit gradient progress)
+    updateSliderTrack(inputClientes);
+    updateSliderTrack(inputTicket);
+
+    // Pulse result value
+    pulseValue(outMonth);
+  }
+
+  // Initial render
+  updateSliderTrack(inputClientes);
+  updateSliderTrack(inputTicket);
+
+  // Listeners
+  inputClientes.addEventListener('input', update);
+  inputTicket.addEventListener('input', update);
+})();
+</script>
+
+
+</body>
+</html>

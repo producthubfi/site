@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soluções — Hubfi</title>
+  <meta name="description" content="Cinco soluções pra escalar receita além da venda do imóvel. Originação multi-banco, white label, API, bancarização e a IA que opera com seu time.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/14-solucoes.css">
+</head>
+<body>
+
+  <!-- ============ RIBBON ============ -->
+  <div class="bg-gradient-to-r from-[#053D38] via-[#08574F] to-[#053D38] text-white text-[13px] py-2 px-6 text-center">
+    <span class="opacity-80">Novo</span><span class="mx-2 opacity-30">·</span>
+    <strong class="font-semibold">Hubfi Copilot</strong>
+    <span class="opacity-80"> chegou — sua IA pra crédito imobiliário</span>
+    <a href="#copilot" class="ml-2 inline-flex items-center gap-1 text-[#7CCBB9] font-semibold hover:text-white transition-colors">
+      Conhecer
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-[#E5E7EB]">
+    <div class="max-w-[1280px] mx-auto px-12 h-[68px] flex items-center justify-between">
+      <a href="index.html" class="flex items-center">
+        <img id="logo" src="images/hubfi.png" alt="Hubfi" class="h-7">
+      </a>
+      <nav class="flex items-center gap-1">
+        <div class="nav-dropdown">
+          <button class="nav-dropdown__trigger">
+            Soluções
+            <svg class="chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown__panel">
+            <div class="nav-dropdown__grid">
+              <div class="nav-dropdown__col-products">
+                <a href="#originacao" class="dropdown-card">
+                  <div class="dropdown-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0A7165" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h2"/></svg></div>
+                  <div class="dropdown-card__body">
+                    <div class="dropdown-card__title">Originação <svg class="arr-tiny" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
+                    <div class="dropdown-card__desc">+60 produtos · multi-banco · esteira única</div>
+                  </div>
+                </a>
+                <a href="#whitelabel" class="dropdown-card">
+                  <div class="dropdown-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0A7165" stroke-width="1.8" stroke-linecap="round"><path d="M21 12a9 9 0 1 1-9-9c1.4 0 2.7.3 3.9.9"/><circle cx="12" cy="12" r="3"/><path d="m15 3 3 3-3 3"/></svg></div>
+                  <div class="dropdown-card__body">
+                    <div class="dropdown-card__title">White Label <svg class="arr-tiny" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
+                    <div class="dropdown-card__desc">Sua marca, nossa infraestrutura</div>
+                  </div>
+                </a>
+                <a href="#api" class="dropdown-card">
+                  <div class="dropdown-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0A7165" stroke-width="1.8" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                  <div class="dropdown-card__body">
+                    <div class="dropdown-card__title">API <svg class="arr-tiny" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
+                    <div class="dropdown-card__desc">Conecte sua operação ao crédito</div>
+                  </div>
+                </a>
+                <a href="#bancarizacao" class="dropdown-card">
+                  <div class="dropdown-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0A7165" stroke-width="1.8" stroke-linecap="round"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11"/></svg></div>
+                  <div class="dropdown-card__body">
+                    <div class="dropdown-card__title">Bancarização <svg class="arr-tiny" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
+                    <div class="dropdown-card__desc">+70 instituições financeiras</div>
+                  </div>
+                </a>
+              </div>
+              <a href="#copilot" class="dropdown-promo">
+                <div class="dropdown-promo__top">
+                  <span class="dropdown-promo__badge">★ Novo</span>
+                  <div class="dropdown-promo__title">Hubfi Copilot</div>
+                  <div class="dropdown-promo__desc">A IA que opera com sua equipe.</div>
+                </div>
+                <div class="dropdown-promo__cta">Conhecer Copilot <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="nav-dropdown__trigger" style="cursor:pointer">Plataforma</a>
+        <a href="#" class="nav-dropdown__trigger" style="cursor:pointer">Empresa</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#" class="text-[14px] font-medium text-[#262B3B] hover:text-[#0F1219] px-3 py-2">Entrar</a>
+        <a href="#cta" class="btn-cta-primary btn-cta-primary--sm">
+          <span class="icn-wrap"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+          Agendar demo
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-ambient">
+      <div class="hero-ambient-grid"></div>
+      <div class="hero-ambient-blob hero-ambient-blob--1"></div>
+      <div class="hero-ambient-blob hero-ambient-blob--2"></div>
+      <div class="hero-ambient-blob hero-ambient-blob--3"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="hero-tag">
+          <span class="hero-tag-pill">5 soluções</span>
+          70+ bancos · 1 só plataforma
+        </span>
+
+        <h1 class="hero-h1">
+          A plataforma que <span class="hero-h1-swap" id="heroSwap"><span class="hero-h1-swap-word is-visible" data-word="origina">origina</span><span class="hero-h1-swap-cursor"></span></span> a sua próxima <strong>receita</strong>.
+        </h1>
+
+        <p class="hero-lead">
+          Imobiliárias, assessorias e corbans usam a Hubfi pra <b>escalar muito além da venda do imóvel</b>. Originação multi-banco, white label, API, bancarização e a IA que opera com seu time — tudo numa esteira só.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#cta" class="btn-cta-primary">
+            <span class="icn-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+            Agendar demonstração
+          </a>
+          <a href="#originacao" class="btn-cta-ghost">
+            <span class="icn-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+            Conhecer as soluções
+          </a>
+        </div>
+
+        <div class="hero-stack">
+          <div class="hero-stack-photos">
+            <div class="hero-stack-photo"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop&q=80" alt=""></div>
+            <div class="hero-stack-photo"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&h=120&fit=crop&q=80" alt=""></div>
+            <div class="hero-stack-photo"><img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=120&h=120&fit=crop&q=80" alt=""></div>
+            <div class="hero-stack-photo"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&h=120&fit=crop&q=80" alt=""></div>
+          </div>
+          <span class="hero-stack-text"><b>+<span data-counter="18.7" data-counter-decimals="1" data-counter-sep=",">0,0</span>k</b> profissionais já operam com a Hubfi</span>
+        </div>
+      </div>
+
+      <div class="hero-canvas">
+        <!-- Linha decorativa de fundo -->
+        <div class="hero-canvas-line">
+          <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="200" cy="200" r="180"/>
+            <circle cx="200" cy="200" r="140" stroke-dasharray="2 12"/>
+          </svg>
+        </div>
+
+        <!-- Pílulas das 5 soluções -->
+        <div class="hero-pills">
+          <span class="hero-pill hero-pill--1">
+            <span class="hero-pill-num">01</span>
+            Originação
+          </span>
+          <span class="hero-pill hero-pill--2">
+            <span class="hero-pill-num">04</span>
+            Bancarização
+          </span>
+          <span class="hero-pill hero-pill--3">
+            <span class="hero-pill-num">05</span>
+            Copilot
+          </span>
+        </div>
+
+        <!-- Foto principal: Mariana / Bossa Nova -->
+        <div class="hero-canvas-main">
+          <div class="hero-canvas-main-photo">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=480&h=600&fit=crop&q=80" alt="Mariana Cavalcanti">
+          </div>
+          <div class="hero-canvas-main-label">
+            <div class="hero-canvas-main-label-emoji">BN</div>
+            <div class="hero-canvas-main-label-info">
+              <div class="hero-canvas-main-label-name">Mariana Cavalcanti</div>
+              <div class="hero-canvas-main-label-role">CEO · Bossa Nova Imóveis</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mini-card stat: +18,7k -->
+        <div class="hero-card-stat">
+          <div class="hero-card-stat-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="hero-card-stat-num"><span data-counter="18.7" data-counter-decimals="1" data-counter-sep=",">0,0</span><em>k</em></div>
+          <div class="hero-card-stat-label"><b>Profissionais</b><br>operando hoje</div>
+        </div>
+
+        <!-- Mini-card notif: banco aprovou -->
+        <div class="hero-card-notif">
+          <div class="hero-card-notif-dot"></div>
+          <div class="hero-card-notif-bank">It</div>
+          <div class="hero-card-notif-text"><b>Itaú</b> aprovou a <em>9,49% AA</em></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE BANCOS ============ -->
+  <section class="marquee">
+    <div class="marquee-head">
+      <b>+70 instituições financeiras</b> · análise paralela · 1 só esteira
+    </div>
+    <div class="marquee-track-wrap">
+      <div class="marquee-track">
+        <span class="marquee-bank">Itaú</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Bradesco</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Santander</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Caixa</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Banco do Brasil</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Inter</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">BTG Pactual</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Safra</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Sicredi</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Sicoob</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">C6 Bank</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Pan</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">BV</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Original</span><span class="marquee-bank-dot"></span>
+        <!-- duplicado pra loop -->
+        <span class="marquee-bank">Itaú</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Bradesco</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Santander</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Caixa</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Banco do Brasil</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Inter</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">BTG Pactual</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Safra</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Sicredi</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Sicoob</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">C6 Bank</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Pan</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">BV</span><span class="marquee-bank-dot"></span>
+        <span class="marquee-bank">Original</span><span class="marquee-bank-dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTRO 5 SOLUÇÕES ============ -->
+  <section class="intro">
+    <div class="intro-inner">
+      <div class="intro-eyebrow" data-reveal>Cinco soluções, uma operação</div>
+      <h2 class="intro-h2" data-reveal data-reveal-delay="1">
+        Tudo que sua imobiliária precisa pra <strong>escalar</strong> além da venda — <em>sem trocar de tela.</em>
+      </h2>
+      <p class="intro-lead" data-reveal data-reveal-delay="2">
+        A Hubfi conecta originação, marca, integração, bancos e IA num único lugar. Cada solução resolve uma dor específica — e juntas, multiplicam a receita do seu negócio.
+      </p>
+
+      <div class="intro-grid">
+        <a href="#originacao" class="intro-card" data-reveal data-reveal-delay="2">
+          <span class="intro-card-num">01</span>
+          <div class="intro-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 16V8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"/>
+              <path d="M3 16h18"/>
+              <path d="M7 11h2M11 11h2M15 11h2"/>
+              <circle cx="6" cy="20" r="1.5"/>
+              <circle cx="18" cy="20" r="1.5"/>
+            </svg>
+          </div>
+          <div class="intro-card-name">Originação</div>
+          <div class="intro-card-desc">+60 produtos · multi-banco em paralelo</div>
+        </a>
+
+        <a href="#whitelabel" class="intro-card" data-reveal data-reveal-delay="3">
+          <span class="intro-card-num">02</span>
+          <div class="intro-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="3"/>
+              <path d="M3 9h18"/>
+              <circle cx="6.5" cy="6" r=".7" fill="currentColor"/>
+              <circle cx="9" cy="6" r=".7" fill="currentColor"/>
+              <path d="M8 14h8M8 17h5"/>
+            </svg>
+          </div>
+          <div class="intro-card-name">White Label</div>
+          <div class="intro-card-desc">Sua marca, nossa infraestrutura</div>
+        </a>
+
+        <a href="#api" class="intro-card" data-reveal data-reveal-delay="4">
+          <span class="intro-card-num">03</span>
+          <div class="intro-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+              <line x1="13" y1="4" x2="11" y2="20"/>
+            </svg>
+          </div>
+          <div class="intro-card-name">API</div>
+          <div class="intro-card-desc">Crédito como linha de código</div>
+        </a>
+
+        <a href="#bancarizacao" class="intro-card" data-reveal data-reveal-delay="5">
+          <span class="intro-card-num">04</span>
+          <div class="intro-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21h18"/>
+              <path d="M3 10h18"/>
+              <path d="m5 6 7-3 7 3"/>
+              <path d="M4 10v11"/>
+              <path d="M20 10v11"/>
+              <path d="M8 14v4"/>
+              <path d="M12 14v4"/>
+              <path d="M16 14v4"/>
+            </svg>
+          </div>
+          <div class="intro-card-name">Bancarização</div>
+          <div class="intro-card-desc">+70 instituições, acesso direto</div>
+        </a>
+
+        <a href="#copilot" class="intro-card" data-reveal data-reveal-delay="6">
+          <span class="intro-card-num">05</span>
+          <div class="intro-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a4 4 0 0 1 4 4v2"/>
+              <path d="M12 2a4 4 0 0 0-4 4v2"/>
+              <path d="M16 8a4 4 0 1 1-8 0"/>
+              <path d="M9 14h6l-1 8h-4z"/>
+              <path d="M5 11l-2 1M19 11l2 1"/>
+            </svg>
+          </div>
+          <div class="intro-card-name">Hubfi Copilot</div>
+          <div class="intro-card-desc">A IA que opera com seu time</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOL 01 — ORIGINAÇÃO ============ -->
+  <section id="originacao" class="sol sol--orig">
+    <div class="sol-inner">
+      <div class="sol-text">
+        <div class="sol-num" data-reveal>
+          <span class="sol-num-pill">01</span>
+          Originação
+        </div>
+        <h2 class="sol-h2" data-reveal data-reveal-delay="1">
+          +60 produtos. <em>Uma esteira só.</em>
+        </h2>
+        <p class="sol-lead" data-reveal data-reveal-delay="2">
+          O cliente preenche o cadastro <b>uma vez</b>. A plataforma roda análise paralela em todos os bancos relevantes. Em segundos, você vê quem aprovou, com qual taxa, quem ainda tá analisando.
+        </p>
+        <ul class="sol-list">
+          <li class="sol-list-item" data-reveal data-reveal-delay="2">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Análise paralela</b> em até 10 bancos por operação</span>
+          </li>
+          <li class="sol-list-item" data-reveal data-reveal-delay="3">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Imobiliário, consórcio, veículos, PF e PJ</b> — +10 categorias</span>
+          </li>
+          <li class="sol-list-item" data-reveal data-reveal-delay="4">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Doc digital</b> com assinatura eletrônica integrada</span>
+          </li>
+        </ul>
+        <a href="#" class="sol-link" data-reveal data-reveal-delay="5">
+          Ver todos os produtos
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="sol-visual" data-reveal data-reveal-delay="2">
+        <div class="sol-visual-ring"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><circle cx="250" cy="250" r="240"/></svg></div>
+        <div class="sol-visual-photo">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=750&fit=crop&q=80" alt="Profissional usando o sistema">
+        </div>
+        <div class="sol-visual-chip sol-visual-chip--rate">
+          <span class="sol-visual-chip-dot"></span>
+          <div>
+            <div class="sol-visual-chip--rate-num"><span data-counter="9.49" data-counter-decimals="2" data-counter-sep=",">0,00</span><em>%</em></div>
+            <div style="font-size: 10px; color: #6B7280; margin-top: 2px; letter-spacing: -.005em">Itaú · vencedor</div>
+          </div>
+        </div>
+        <div class="sol-visual-chip sol-visual-chip--time">
+          <span class="sol-visual-chip-dot"></span>
+          <span><b><span data-counter="2.8" data-counter-decimals="1" data-counter-sep=",">0,0</span>s</b> · análise multi-banco</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOL 02 — WHITE LABEL (DARK + REVERSE) ============ -->
+  <section id="whitelabel" class="sol sol--wl sol--dark sol--reverse">
+    <div class="sol-inner">
+      <div class="sol-text">
+        <div class="sol-num" data-reveal>
+          <span class="sol-num-pill">02</span>
+          White Label
+        </div>
+        <h2 class="sol-h2" data-reveal data-reveal-delay="1">
+          Sua marca. <em>Por cima de tudo.</em>
+        </h2>
+        <p class="sol-lead" data-reveal data-reveal-delay="2">
+          A mesma plataforma. Marcas diferentes, cada uma com sua identidade. O cliente final vê só o que você quer que ele veja — <b>domínio, cores, tom de voz, e-mails, WhatsApp</b>. Ninguém precisa saber que tem Hubfi por trás.
+        </p>
+        <ul class="sol-list">
+          <li class="sol-list-item" data-reveal data-reveal-delay="2">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Domínio próprio</b> — credito.suaempresa.com.br</span>
+          </li>
+          <li class="sol-list-item" data-reveal data-reveal-delay="3">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Identidade visual completa</b> — cores, fontes, tom de voz</span>
+          </li>
+          <li class="sol-list-item" data-reveal data-reveal-delay="4">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>Configuração em <b>menos de 48h</b></span>
+          </li>
+        </ul>
+        <a href="#" class="sol-link" data-reveal data-reveal-delay="5">
+          Ver casos de uso
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="sol-visual" data-reveal data-reveal-delay="2">
+        <div class="wl-stack">
+          <div class="wl-stack-card wl-stack-card--1" style="--bc:#0E8B7A">
+            <div class="wl-stack-card-bar"></div>
+            <div class="wl-stack-card-head">
+              <div class="wl-stack-card-logo">VI</div>
+              <div>
+                <div class="wl-stack-card-name">Vivere</div>
+                <div class="wl-stack-card-domain">vivere.com.br</div>
+              </div>
+            </div>
+            <span class="wl-stack-card-tag" style="background: #EBF7F4; color: #053D38">FINANCIAMENTO</span>
+            <div class="wl-stack-card-headline">Sua casa começa aqui.</div>
+            <div class="wl-stack-card-cta">Simular agora</div>
+          </div>
+          <div class="wl-stack-card wl-stack-card--2" style="--bc:#053D38">
+            <div class="wl-stack-card-bar"></div>
+            <div class="wl-stack-card-head">
+              <div class="wl-stack-card-logo">BN</div>
+              <div>
+                <div class="wl-stack-card-name">Bossa Nova</div>
+                <div class="wl-stack-card-domain">bossanova.com</div>
+              </div>
+            </div>
+            <span class="wl-stack-card-tag" style="background:#022B27; color: #7CCBB9">CRÉDITO</span>
+            <div class="wl-stack-card-headline">Crédito imobiliário sem dor.</div>
+            <div class="wl-stack-card-cta">Solicitar</div>
+          </div>
+          <div class="wl-stack-card wl-stack-card--3" style="--bc:#08574F">
+            <div class="wl-stack-card-bar"></div>
+            <div class="wl-stack-card-head">
+              <div class="wl-stack-card-logo">IP</div>
+              <div>
+                <div class="wl-stack-card-name">Ipê</div>
+                <div class="wl-stack-card-domain">ipeimoveis.com</div>
+              </div>
+            </div>
+            <span class="wl-stack-card-tag" style="background: #AEDFD3; color: #022B27">PARCEIRO</span>
+            <div class="wl-stack-card-headline">Aprovação em 24h.</div>
+            <div class="wl-stack-card-cta">Começar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOL 03 — API ============ -->
+  <section id="api" class="sol sol--api">
+    <div class="sol-inner">
+      <div class="sol-text">
+        <div class="sol-num" data-reveal>
+          <span class="sol-num-pill">03</span>
+          API
+        </div>
+        <h2 class="sol-h2" data-reveal data-reveal-delay="1">
+          Em horas, <em>não em meses.</em>
+        </h2>
+        <p class="sol-lead" data-reveal data-reveal-delay="2">
+          REST API documentada, webhooks em tempo real, SDKs nas linguagens que importam. <b>Seu CRM, ERP ou app começa a originar crédito como se fizesse isso desde o dia um.</b>
+        </p>
+
+        <div class="api-sdks" data-reveal data-reveal-delay="3">
+          <span class="api-sdk-chip">node.js</span>
+          <span class="api-sdk-chip">python</span>
+          <span class="api-sdk-chip">php</span>
+          <span class="api-sdk-chip">java</span>
+          <span class="api-sdk-chip">ruby</span>
+          <span class="api-sdk-chip">go</span>
+        </div>
+
+        <ul class="sol-list">
+          <li class="sol-list-item" data-reveal data-reveal-delay="3">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>REST API</b> documentada com sandbox completo</span>
+          </li>
+          <li class="sol-list-item" data-reveal data-reveal-delay="4">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Webhooks</b> em tempo real a cada mudança de status</span>
+          </li>
+          <li class="sol-list-item" data-reveal data-reveal-delay="5">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>SDKs oficiais</b> em 6 linguagens</span>
+          </li>
+        </ul>
+        <a href="#" class="sol-link" data-reveal data-reveal-delay="6">
+          Ver documentação técnica
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="sol-visual" style="aspect-ratio: auto;" data-reveal data-reveal-delay="2">
+        <div class="api-shell">
+          <div class="api-shell-tabs">
+            <span class="api-shell-tab is-active">simulacoes.js</span>
+            <span class="api-shell-tab">webhooks.js</span>
+          </div>
+          <div class="api-term">
+            <div class="api-term-bar">
+              <div class="api-term-dots">
+                <span class="api-term-dot"></span>
+                <span class="api-term-dot"></span>
+                <span class="api-term-dot"></span>
+              </div>
+              <span class="api-term-name">simulacoes <b>· hubfi-sdk</b></span>
+              <span class="api-term-method">POST</span>
+            </div>
+            <div class="api-term-body"><span class="c">// análise multi-banco em paralelo</span>
+<span class="k">const</span> sim = <span class="k">await</span> hubfi.simulations.<span class="p">create</span>({
+  <span class="p">cpf</span>: <span class="s">"312.847.000-00"</span>,
+  <span class="p">renda</span>: <span class="n">18500</span>,
+  <span class="p">imovel</span>: { <span class="p">valor</span>: <span class="n">680000</span>, <span class="p">prazo</span>: <span class="n">360</span> },
+  <span class="p">bancos</span>: [<span class="s">"itau"</span>, <span class="s">"caixa"</span>, <span class="s">"bradesco"</span>]
+});<span class="api-term-cursor"></span></div>
+            <div class="api-term-resp">
+              <div class="api-term-resp-head">
+                Response · 2.3s
+                <span class="api-term-resp-status">200 OK</span>
+              </div>
+              <div>→ 3 bancos retornaram</div>
+              <div>→ melhor taxa: <b>9,49% AA</b> (Itaú)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOL 04 — BANCARIZAÇÃO (DARK + REVERSE) ============ -->
+  <section id="bancarizacao" class="sol sol--bank sol--dark sol--reverse">
+    <div class="sol-inner">
+      <div class="sol-text">
+        <div class="sol-num" data-reveal>
+          <span class="sol-num-pill">04</span>
+          Bancarização
+        </div>
+        <h2 class="sol-h2" data-reveal data-reveal-delay="1">
+          Acesso direto. <em>Sem intermediário.</em>
+        </h2>
+        <p class="sol-lead" data-reveal data-reveal-delay="2">
+          Análise paralela em até 10 instituições simultâneas. <b>Conciliação automática.</b> Comissionamento multi-nível pra sua rede de parceiros. Você fica só com a parte boa: vender e fechar.
+        </p>
+        <ul class="sol-list">
+          <li class="sol-list-item" data-reveal data-reveal-delay="2">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>+70 instituições</b> integradas com análise paralela</span>
+          </li>
+          <li class="sol-list-item" data-reveal data-reveal-delay="3">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Conciliação automática</b> — sem reconciliação manual</span>
+          </li>
+          <li class="sol-list-item" data-reveal data-reveal-delay="4">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Comissionamento multi-nível</b> pra rede de parceiros</span>
+          </li>
+        </ul>
+        <a href="#" class="sol-link" data-reveal data-reveal-delay="5">
+          Lista completa de bancos
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="sol-visual" style="aspect-ratio: auto;" data-reveal data-reveal-delay="2">
+        <div class="bank-bignum">
+          <div class="bank-bignum-num">+<span data-counter="70" data-counter-end="70">0</span><em></em></div>
+          <div class="bank-bignum-label">Instituições integradas</div>
+        </div>
+        <div class="bank-list" data-cascade>
+          <span class="bank-list-pill">Itaú</span>
+          <span class="bank-list-pill">Bradesco</span>
+          <span class="bank-list-pill">Santander</span>
+          <span class="bank-list-pill">Caixa</span>
+          <span class="bank-list-pill">BB</span>
+          <span class="bank-list-pill">Inter</span>
+          <span class="bank-list-pill">BTG</span>
+          <span class="bank-list-pill">Safra</span>
+          <span class="bank-list-pill">Sicredi</span>
+          <span class="bank-list-pill">Sicoob</span>
+          <span class="bank-list-pill">C6</span>
+          <span class="bank-list-pill">Pan</span>
+          <span class="bank-list-pill">BV</span>
+          <span class="bank-list-pill">Original</span>
+          <span class="bank-list-pill bank-list-pill--more">+56 outras</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOL 05 — COPILOT ============ -->
+  <section id="copilot" class="sol sol--copilot">
+    <div class="sol-inner">
+      <div class="sol-text">
+        <div class="sol-num" data-reveal>
+          <span class="sol-num-pill">05</span>
+          Hubfi Copilot
+        </div>
+        <h2 class="sol-h2" data-reveal data-reveal-delay="1">
+          A IA que <em>opera com você.</em>
+        </h2>
+        <p class="sol-lead" data-reveal data-reveal-delay="2">
+          Treinada em milhões de operações reais. Recomenda banco, prevê aprovação, conversa com seu cliente no WhatsApp e cobra documentos sozinha. <b>Sem tirar o humano do jogo.</b>
+        </p>
+        <ul class="sol-list">
+          <li class="sol-list-item" data-reveal data-reveal-delay="2">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Previsão de aprovação</b> por banco antes do envio</span>
+          </li>
+          <li class="sol-list-item" data-reveal data-reveal-delay="3">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Recomendação inteligente</b> com nível de confiança</span>
+          </li>
+          <li class="sol-list-item" data-reveal data-reveal-delay="4">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Atendimento WhatsApp</b> com sua marca, 24/7</span>
+          </li>
+          <li class="sol-list-item" data-reveal data-reveal-delay="5">
+            <span class="sol-list-item-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Cobrança automática</b> de documentos pendentes</span>
+          </li>
+        </ul>
+        <a href="#" class="sol-link" data-reveal data-reveal-delay="6">
+          Conhecer o Copilot
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="sol-visual" style="aspect-ratio: auto;" data-reveal data-reveal-delay="2">
+        <div class="copilot-chat">
+          <div class="copilot-chat-head">
+            <div class="copilot-chat-avatar">H</div>
+            <div class="copilot-chat-info">
+              <div class="copilot-chat-name">
+                Hubfi Copilot
+                <span class="copilot-chat-name-badge">IA</span>
+              </div>
+              <div class="copilot-chat-status">Análise em tempo real · OP-2048</div>
+            </div>
+          </div>
+          <div class="copilot-chat-msgs" data-step="0" id="copilotMsgs">
+            <div class="copilot-chat-msg copilot-chat-msg--user">
+              <div class="copilot-chat-msg-mini">MC</div>
+              <div class="copilot-chat-msg-bubble">Qual banco eu mando essa proposta?</div>
+            </div>
+            <div class="copilot-chat-msg copilot-chat-msg--copilot">
+              <div class="copilot-chat-msg-mini">H</div>
+              <div class="copilot-chat-msg-bubble">
+                Vai de <b>Itaú</b>: melhor taxa (<b>9,49% AA</b>) e Bossa Nova já fechou <b>14 ops</b> nos últimos 90 dias. Score do cliente é <b>892</b> — perfil sólido.
+                <div class="copilot-chat-confidence">
+                  <div class="copilot-chat-confidence-label">
+                    <span>Confiança da recomendação</span>
+                    <span><span data-counter="92" data-counter-decimals="0">0</span>%</span>
+                  </div>
+                  <div class="copilot-chat-confidence-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="copilot-chat-msg copilot-chat-msg--copilot">
+              <div class="copilot-chat-msg-mini">H</div>
+              <div class="copilot-chat-msg-bubble">Quer que eu prepare a proposta?</div>
+            </div>
+          </div>
+          <div class="copilot-chat-suggested">
+            <button class="copilot-chat-chip">Sim, enviar agora</button>
+            <button class="copilot-chat-chip">Revisar antes</button>
+            <button class="copilot-chat-chip">Comparar com Caixa</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CASES ============ -->
+  <section class="cases">
+    <div class="cases-inner">
+      <div class="cases-head">
+        <div class="cases-head-text">
+          <div class="cases-head-eyebrow" data-reveal>Cases reais</div>
+          <h2 class="cases-head-h2" data-reveal data-reveal-delay="1">
+            Quem usa, <em>opera diferente.</em>
+          </h2>
+        </div>
+        <a href="#" class="cases-head-link" data-reveal data-reveal-delay="2">
+          Ver todos os cases
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="cases-grid">
+        <article class="case-card" data-reveal data-reveal-delay="2">
+          <div class="case-card-photo">
+            <span class="case-card-photo-tag">Imobiliária</span>
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=450&fit=crop&q=80" alt="Mariana Cavalcanti">
+          </div>
+          <div class="case-card-body">
+            <p class="case-card-quote">
+              Cortamos o tempo de fechamento de <em>28 para 4 dias</em>. Triplicamos o volume — <b>com a mesma equipe</b>.
+            </p>
+            <div class="case-card-meta">
+              <div class="case-card-meta-photo"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop&q=80" alt=""></div>
+              <div class="case-card-meta-info">
+                <div class="case-card-meta-name">Mariana Cavalcanti</div>
+                <div class="case-card-meta-role">CEO · Bossa Nova Imóveis</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card" data-reveal data-reveal-delay="3">
+          <div class="case-card-photo">
+            <span class="case-card-photo-tag">Assessoria</span>
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=450&fit=crop&q=80" alt="Rafael Andrade">
+          </div>
+          <div class="case-card-body">
+            <p class="case-card-quote">
+              Antes a gente tinha <b>6 sistemas abertos</b>. Hoje tudo entra na Hubfi — <em>uma esteira única</em> pro time inteiro.
+            </p>
+            <div class="case-card-meta">
+              <div class="case-card-meta-photo"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&h=120&fit=crop&q=80" alt=""></div>
+              <div class="case-card-meta-info">
+                <div class="case-card-meta-name">Rafael Andrade</div>
+                <div class="case-card-meta-role">Diretor · Vivere Crédito</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card" data-reveal data-reveal-delay="4">
+          <div class="case-card-photo">
+            <span class="case-card-photo-tag">Corban</span>
+            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&h=450&fit=crop&q=80" alt="Patrícia Lopes">
+          </div>
+          <div class="case-card-body">
+            <p class="case-card-quote">
+              Com o Copilot a gente <em>responde cliente em segundos</em>, mesmo às 23h. <b>NPS subiu 38 pontos</b> em 4 meses.
+            </p>
+            <div class="case-card-meta">
+              <div class="case-card-meta-photo"><img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=120&h=120&fit=crop&q=80" alt=""></div>
+              <div class="case-card-meta-info">
+                <div class="case-card-meta-name">Patrícia Lopes</div>
+                <div class="case-card-meta-role">CEO · Ipê Crédito</div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MÓDULOS ============ -->
+  <section id="modulos" class="modules">
+    <div class="modules-inner">
+      <div class="modules-head">
+        <div>
+          <div class="modules-head-eyebrow" data-reveal>Módulos · S.06 às S.09</div>
+          <h2 class="modules-head-h2" data-reveal data-reveal-delay="1">As pontas que <em>fecham</em> a operação.</h2>
+        </div>
+        <p class="modules-head-sub" data-reveal data-reveal-delay="2">
+          Recursos que se integram às 5 soluções principais — comunicação, fluxo financeiro, conformidade e documentos. Clique pra abrir.
+        </p>
+      </div>
+
+      <div class="modules-grid">
+        <div class="module" data-module>
+          <div class="module-head">
+            <div class="module-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <div class="module-info">
+              <div class="module-name">Mensageria omnichannel</div>
+              <div class="module-num">S.06</div>
+            </div>
+            <div class="module-toggle"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+          </div>
+          <div class="module-body">
+            <div class="module-body-inner">
+              <p class="module-desc">
+                Templates prontos pra cada etapa da operação. <b>Cobranças, atualizações de status e confirmações em automático</b> — WhatsApp, e-mail e SMS na mesma trilha, com a marca do seu cliente.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="module" data-module>
+          <div class="module-head">
+            <div class="module-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <div class="module-info">
+              <div class="module-name">Split de pagamento</div>
+              <div class="module-num">S.07</div>
+            </div>
+            <div class="module-toggle"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+          </div>
+          <div class="module-body">
+            <div class="module-body-inner">
+              <p class="module-desc">
+                Divisão automática de comissões entre <b>imobiliária, corretor e parceiros</b> — em cada operação fechada, sem reconciliação manual. Configure regras por produto, banco ou volume.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="module" data-module>
+          <div class="module-head">
+            <div class="module-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <div class="module-info">
+              <div class="module-name">Compliance e antifraude</div>
+              <div class="module-num">S.08</div>
+            </div>
+            <div class="module-toggle"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+          </div>
+          <div class="module-body">
+            <div class="module-body-inner">
+              <p class="module-desc">
+                <b>KYC, validação de documentos, antifraude e auditoria de conformidade BACEN</b> — embutidos em cada operação. Sem etapa extra pro cliente, sem dor de cabeça pro seu time.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="module" data-module>
+          <div class="module-head">
+            <div class="module-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+            <div class="module-info">
+              <div class="module-name">Documentos digitais</div>
+              <div class="module-num">S.09</div>
+            </div>
+            <div class="module-toggle"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+          </div>
+          <div class="module-body">
+            <div class="module-body-inner">
+              <p class="module-desc">
+                <b>Coleta digital, OCR, validação automática e armazenamento seguro</b> de toda documentação da operação. RG, comprovantes, IR, contracheques — num único repositório.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section id="cta" class="final-cta">
+    <div class="final-cta-ambient">
+      <div class="final-cta-grid"></div>
+      <div class="final-cta-blob final-cta-blob--1"></div>
+      <div class="final-cta-blob final-cta-blob--2"></div>
+    </div>
+
+    <div class="final-cta-inner">
+      <div class="final-cta-eyebrow" data-reveal>Pronto pra escalar?</div>
+
+      <h2 class="final-cta-h2" data-reveal data-reveal-delay="1">
+        Cinco soluções, <em>uma demonstração</em>, <strong>30 minutos.</strong>
+      </h2>
+
+      <p class="final-cta-sub" data-reveal data-reveal-delay="2">
+        A gente abre a plataforma com a sua operação real. Sem apresentação genérica, sem compromisso. Só cinco minutos pra agendar.
+      </p>
+
+      <div class="final-cta-actions" data-reveal data-reveal-delay="3">
+        <a href="#" class="btn-cta-white">
+          <span class="icn-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+          Agendar demonstração
+        </a>
+        <a href="https://wa.me/553532928398" class="btn-cta-ghost btn-cta-ghost--on-dark">
+          <span class="icn-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
+          Falar no WhatsApp
+        </a>
+      </div>
+
+      <div class="final-cta-people" data-reveal data-reveal-delay="4">
+        <div class="final-cta-people-photos">
+          <div class="final-cta-people-photo"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop&q=80" alt=""></div>
+          <div class="final-cta-people-photo"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&h=120&fit=crop&q=80" alt=""></div>
+          <div class="final-cta-people-photo"><img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=120&h=120&fit=crop&q=80" alt=""></div>
+          <div class="final-cta-people-photo"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&h=120&fit=crop&q=80" alt=""></div>
+          <div class="final-cta-people-photo"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&h=120&fit=crop&q=80" alt=""></div>
+        </div>
+        <span class="final-cta-people-text"><b>+18,7k</b> profissionais já usam</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="fo-cta-strip">
+      <div class="fo-cta-inner">
+        <div class="fo-cta-headline">O motor que move o <em>crédito imobiliário</em> no Brasil.</div>
+        <a href="#cta" class="fo-cta-sub">Agendar demonstração <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+    <div class="fo-body">
+      <div class="fo-body-inner">
+        <div>
+          <div class="fo-col-title">Navegue</div>
+          <ul class="fo-links">
+            <li><a class="fo-link" href="#">Soluções</a></li>
+            <li><a class="fo-link" href="#">Para quem</a></li>
+            <li><a class="fo-link" href="#">Planos</a></li>
+            <li><a class="fo-link" href="#">Cases</a></li>
+            <li><a class="fo-link" href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="fo-col-title">Plataforma</div>
+          <ul class="fo-links">
+            <li><a class="fo-link" href="#">Imobiliárias</a></li>
+            <li><a class="fo-link" href="#">Assessorias</a></li>
+            <li><a class="fo-link" href="#copilot">Hubfi Copilot</a></li>
+            <li><a class="fo-link" href="#api">API & Devs</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="fo-col-title">Empresa</div>
+          <ul class="fo-links">
+            <li><a class="fo-link" href="#">Sobre nós</a></li>
+            <li><a class="fo-link" href="#">Carreira</a></li>
+            <li><a class="fo-link" href="#">Imprensa</a></li>
+            <li><a class="fo-link" href="#">Termos</a></li>
+            <li><a class="fo-link" href="#">Privacidade</a></li>
+          </ul>
+        </div>
+        <div class="fo-contact">
+          <div class="fo-contact-head">
+            <div class="fo-contact-title">Contato</div>
+            <div class="fo-contact-status"><span class="fo-contact-status-dot"></span>Online agora</div>
+          </div>
+          <a href="https://wa.me/553532928398" class="fo-contact-phone">
+            <div class="fo-contact-phone-wa">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            </div>
+            <div class="fo-contact-phone-num">(35) 3292-8398</div>
+          </a>
+          <a href="mailto:contato@hubfi.com.br" class="fo-contact-email">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            contato@hubfi.com.br
+          </a>
+          <div class="fo-contact-spacer"></div>
+          <div class="fo-contact-hours">
+            <span class="fo-contact-hours-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7CCBB9" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+            <span class="fo-contact-hours-text"><b>Seg a sex</b>· 9h às 18h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fo-bottom">
+      <div class="fo-bottom-inner">
+        <div>
+          <div class="fo-brand"><img id="logo" src="images/hubfi-dark.png" alt="Hubfi"></div>
+          <p class="fo-about-text">A Hubfi é a plataforma B2B de soluções financeiras que conecta imobiliárias, assessorias e consultorias a +70 instituições. Mais de 150 produtos integrados — crédito, seguros, energia e investimentos operados por especialistas do início ao fim.</p>
+          <div class="fo-trust">
+            <span class="fo-trust-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> LGPD</span>
+            <span class="fo-trust-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> ISO 27001</span>
+            <span class="fo-trust-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11"/></svg> BACEN</span>
+          </div>
+        </div>
+        <div class="fo-social-block">
+          <div class="fo-social-title">Acompanhe a Hubfi</div>
+          <div class="fo-social">
+            <a class="fo-social-btn" href="https://instagram.com/hubfi_" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7CCBB9" stroke-width="1.8" data-stroke="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg></a>
+            <a class="fo-social-btn" href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7CCBB9" stroke-width="1.8" data-stroke="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fo-copy">
+      <div class="fo-copy-inner">
+        <div class="fo-copy-text"><b>Hubfi</b> 2026 · Todos os direitos reservados</div>
+        <button class="fo-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+          Voltar ao topo
+          <span class="fo-back-top-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#022B27" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg></span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script>
+    // === Word swap no hero ===
+    (function () {
+      const swap = document.getElementById('heroSwap');
+      if (!swap) return;
+      const words = ['origina', 'recomenda', 'conecta', 'atende', 'opera'];
+      let i = 0;
+      setInterval(() => {
+        const old = swap.querySelector('.hero-h1-swap-word');
+        const cursor = swap.querySelector('.hero-h1-swap-cursor');
+        if (!old) return;
+        old.classList.remove('is-visible');
+        old.classList.add('is-leaving');
+        setTimeout(() => {
+          old.remove();
+          i = (i + 1) % words.length;
+          const next = document.createElement('span');
+          next.className = 'hero-h1-swap-word';
+          next.textContent = words[i];
+          swap.insertBefore(next, cursor);
+          requestAnimationFrame(() => next.classList.add('is-visible'));
+        }, 280);
+      }, 2600);
+    })();
+
+    // === Reveal-on-scroll ===
+    (function () {
+      const els = document.querySelectorAll('[data-reveal]');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-revealed');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+      els.forEach(el => io.observe(el));
+    })();
+
+    // === Counter animation (entra em view → conta de 0 ao target) ===
+    (function () {
+      const fmt = (n, decimals, sep) => {
+        const s = n.toFixed(decimals);
+        return sep === ',' ? s.replace('.', ',') : s;
+      };
+      const animate = (el) => {
+        const target = parseFloat(el.dataset.counter);
+        const decimals = parseInt(el.dataset.counterDecimals || '0', 10);
+        const sep = el.dataset.counterSep || '';
+        const dur = 1500;
+        const start = performance.now();
+        const ease = (t) => 1 - Math.pow(1 - t, 3);
+        const tick = (now) => {
+          const t = Math.min((now - start) / dur, 1);
+          const cur = target * ease(t);
+          el.textContent = fmt(cur, decimals, sep);
+          if (t < 1) requestAnimationFrame(tick);
+          else el.textContent = fmt(target, decimals, sep);
+        };
+        requestAnimationFrame(tick);
+      };
+      const els = document.querySelectorAll('[data-counter]');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { animate(e.target); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.5 });
+      els.forEach(el => io.observe(el));
+    })();
+
+    // === Typewriter no terminal API ===
+    (function () {
+      const term = document.querySelector('.api-term-body');
+      if (!term) return;
+      const finalHTML = term.innerHTML;
+      const finalText = term.textContent;
+      const cursorEl = '<span class="api-term-cursor"></span>';
+      let started = false;
+      const start = () => {
+        if (started) return; started = true;
+        term.innerHTML = cursorEl;
+        let i = 0;
+        const speed = 14;
+        const tick = () => {
+          i++;
+          if (i > finalText.length) {
+            term.innerHTML = finalHTML;
+            return;
+          }
+          // typewriter simplificado — re-renderiza substring + cursor
+          // pra não perder syntax highlight, mostramos texto puro durante typing
+          term.textContent = finalText.substring(0, i);
+          const c = document.createElement('span');
+          c.className = 'api-term-cursor';
+          term.appendChild(c);
+          setTimeout(tick, speed + Math.random() * 12);
+        };
+        tick();
+      };
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { start(); io.unobserve(e.target); } });
+      }, { threshold: 0.4 });
+      io.observe(term);
+    })();
+
+    // === Sequential chat reveal no Copilot ===
+    (function () {
+      const wrap = document.getElementById('copilotMsgs');
+      if (!wrap) return;
+      const originalMsgs = Array.from(wrap.querySelectorAll('.copilot-chat-msg'));
+      let started = false;
+
+      const showMsg = (msg) => {
+        msg.classList.add('is-shown');
+      };
+
+      const showTyping = (className) => {
+        const t = document.createElement('div');
+        t.className = 'copilot-chat-msg copilot-chat-msg--copilot is-typing';
+        t.innerHTML = `
+          <div class="copilot-chat-msg-mini">H</div>
+          <div class="copilot-chat-typing"><span></span><span></span><span></span></div>
+        `;
+        // Inserir antes da próxima msg ainda não mostrada
+        const nextMsg = originalMsgs.find(m => !m.classList.contains('is-shown'));
+        if (nextMsg) wrap.insertBefore(t, nextMsg);
+        else wrap.appendChild(t);
+        return t;
+      };
+
+      const start = async () => {
+        if (started) return; started = true;
+        for (let i = 0; i < originalMsgs.length; i++) {
+          const msg = originalMsgs[i];
+          const isCopilot = msg.classList.contains('copilot-chat-msg--copilot');
+          if (isCopilot) {
+            const t = showTyping();
+            await new Promise(r => setTimeout(r, 1100));
+            t.remove();
+          } else {
+            await new Promise(r => setTimeout(r, 600));
+          }
+          showMsg(msg);
+          await new Promise(r => setTimeout(r, 350));
+        }
+      };
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { start(); io.unobserve(e.target); } });
+      }, { threshold: 0.5 });
+      io.observe(wrap);
+    })();
+
+    // === Cascade nos bancos pílulas ===
+    (function () {
+      const list = document.querySelector('[data-cascade]');
+      if (!list) return;
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('is-active'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.3 });
+      io.observe(list);
+    })();
+
+    // === Mouse parallax no hero canvas ===
+    (function () {
+      const canvas = document.querySelector('.hero-canvas');
+      if (!canvas) return;
+      let raf = 0;
+      canvas.addEventListener('mousemove', (e) => {
+        const r = canvas.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;   // -0.5 → 0.5
+        const y = (e.clientY - r.top)  / r.height - 0.5;
+        cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(() => {
+          canvas.style.setProperty('--mx', x.toFixed(3));
+          canvas.style.setProperty('--my', y.toFixed(3));
+        });
+      });
+      canvas.addEventListener('mouseleave', () => {
+        canvas.style.setProperty('--mx', 0);
+        canvas.style.setProperty('--my', 0);
+      });
+    })();
+
+    // === Magnetic hover nos intro cards (radial gradient seguindo mouse) ===
+    (function () {
+      const cards = document.querySelectorAll('.intro-card');
+      cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const r = card.getBoundingClientRect();
+          card.style.setProperty('--mx', ((e.clientX - r.left) / r.width).toFixed(3));
+          card.style.setProperty('--my', ((e.clientY - r.top)  / r.height).toFixed(3));
+        });
+      });
+    })();
+
+    // === Módulos accordion ===
+    (function () {
+      const modules = document.querySelectorAll('[data-module]');
+      modules.forEach(mod => {
+        mod.querySelector('.module-head').addEventListener('click', () => {
+          modules.forEach(m => { if (m !== mod) m.classList.remove('is-open'); });
+          mod.classList.toggle('is-open');
+        });
+      });
+      if (modules[0]) modules[0].classList.add('is-open');
+    })();
+  </script>
+</body>
+</html>
